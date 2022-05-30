@@ -84,8 +84,6 @@ def BKGInit(Left, Right, Top, Num):    # 输入图片的左边距，右边距，
             return BKGImg, List+1      # 输出处理后的背景图和干员列数
 
 
-
-
 # #### 主函数开始 ################################
 # #### 数据预设 ##################################
 Skill = [0, 0, 0]
@@ -94,7 +92,6 @@ NumSkillThr = 0
 ShowLine = 0
 ExcelBlockLine = 3  # 表前空行数
 PathHeadBlock = "./Source/Dr头像框.png"  # 博士头像框文件，使用外框需要修改框粘贴坐标，横纵各减小3
-
 excel = xlrd.open_workbook(excel_path, encoding_override="utf-8")
 AllSheets = excel.sheets()  # 获取所有页对象列表
 UseSheet = AllSheets[1]  # 储存第二页对象
@@ -105,13 +102,12 @@ TimeNow = str(UseSheet.cell_value(3, 1))  # 制图时间
 Assistant = UseSheet.cell_value(4, 1)  # 助手名称
 Skin = UseSheet.cell_value(5, 1)  # 助手皮肤
 PathHead = "./Source/Charactor/头像_" + Assistant + Skindict[Skin]  # 助手头像文件
-# ShowList = int(UseSheet.cell_value(6, 1))  # 设置每行展示多少个
-LeftSide = int(UseSheet.cell_value(7, 1))  # 左侧边距
-RightSide = int(UseSheet.cell_value(8, 1))  # 右侧边距
-TopSide = int(UseSheet.cell_value(9, 1))  # 上边距
-SizeName = int(UseSheet.cell_value(10, 1))  #
-SizeID = int(UseSheet.cell_value(11, 1))  #
-SizeTotal = int(UseSheet.cell_value(12, 1))  #
+LeftSide = int(UseSheet.cell_value(6, 1))  # 左侧边距
+RightSide = int(UseSheet.cell_value(7, 1))  # 右侧边距
+TopSide = int(UseSheet.cell_value(8, 1))  # 上边距
+SizeName = int(UseSheet.cell_value(9, 1))  #
+SizeID = int(UseSheet.cell_value(10, 1))  #
+SizeTotal = int(UseSheet.cell_value(11, 1))  #
 PathOutALL = "./OutPut/" + Name + "_" + TimeNow + ".png"
 # 输出图片位置，程序执行中会在这个OutPut目录生成大批小头像，运行完后可删可不删，不影响下次执行
 # # 中文用：NotoSansHans-Regular.otf    英文用：AcuminProBook.ttf
