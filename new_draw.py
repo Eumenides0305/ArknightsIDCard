@@ -2,16 +2,27 @@ import json
 from PIL import Image, ImageFont, ImageDraw  # pillow版本为9.0.0
 from ExcelToJson import exceltojson
 import ctypes
+import re
 
 
 def finishinfo(path: str):
     ctypes.windll.user32.MessageBoxW(0, f"制作完成，图片路径为:{path}", "ArknightsIDCard", 0 | 64)
 
 
+def only_ascii(raw_str: str) -> bool:
+    subed_str = re.sub("[A-Za-z0-9]", "", raw_str)   # 删除数字和英文
+    if subed_str == '':   # 没有内容
+        return True
+    else:
+        return False
+
+
 Skindict = {"精一": ".png", "精二": "_2.png", "skin1": "_skin1.png", "skin2": "_skin2.png", "skin3": "_skin3.png"}
 NumSkillThr = 0
 UseJson = 0
 BKGcheck = 0.01
+
+
 class BKG:
     def __init__(self, data: dict, num: int) -> None:
         self.data = data
@@ -33,11 +44,15 @@ class BKG:
                 return BKGImg, List  # 输出处理后的背景图和干员列数
 
     def addtitle(self) -> None:
-        OnlyEn = 15
-        FontName = ImageFont.truetype("./Source/TTF/AcuminProBook.ttf", self.data['SizeName'])
+        OnlyEn = self.only_ascii_name()
+        EnBig = 15
+        if OnlyEn:                                                                                      # 设置博士名称字体
+            FontName = ImageFont.truetype("./Source/TTF/AcuminProBook.ttf", self.data['SizeName'])      # 英文和数字
+        else:
+            FontName = ImageFont.truetype("./Source/TTF/NotoSansHans-Regular.otf", self.data['SizeName']-5)  # 其他
         FontDayAndID = ImageFont.truetype("./Source/TTF/AcuminProBook.ttf", self.data['SizeID'])  # 设置日期和博士id字体
         FontTotal = ImageFont.truetype("./Source/TTF/BenderRegular.otf", self.data['SizeTotal'])  # 总专三数
-        PathHead = "./Source/Charactor/头像_" + self.data['Assistant'] + Skindict[self.data['Skin']]  # 助手头像文件
+        PathHead = "./Source/Character/头像_" + self.data['Assistant'] + Skindict[self.data['Skin']]  # 助手头像文件
         PathHeadBlock = "./Source/Dr头像框.png"
         PathTotal = "./Source/Skill/专精_3.png"  # 总专精数
         New = Image.open(PathTotal).convert("RGBA")  # 打开图标
@@ -52,7 +67,7 @@ class BKG:
         self.img.paste(New, (self.data['LeftSide'] - 3, self.data['TopSide'] - 3), mask=a)  # 粘贴头像框
         draw = ImageDraw.Draw(self.img)  # 准备添加文字
         text = "Dr. " + self.data['Name']
-        draw.text((self.data['LeftSide'] + 220, self.data['TopSide'] - 30 + OnlyEn), text, font=FontName)  # 写名字
+        draw.text((self.data['LeftSide'] + 220, self.data['TopSide'] - 30 + OnlyEn*EnBig), text, font=FontName)  # 写名字
         text = self.data['DateIn'] + "——" + self.data['DateNow'] + "     ID:" + str(self.data['ID'])
         draw.text((self.data['LeftSide'] + 228, self.data['TopSide'] + 137), text, font=FontDayAndID)  # 日期
         global NumSkillThr
@@ -61,6 +76,12 @@ class BKG:
                   font=FontTotal)  # 专三数
         self.img.save(self.PathOutDrBKG)  # 储存
         finishinfo(self.PathOutDrBKG)
+
+    def only_ascii_name(self) -> bool:
+        cut_word = "#"
+        IndexOf_Jing = self.data['Name'].find(cut_word)
+        Name = self.data['Name'][:IndexOf_Jing]
+        return only_ascii(Name)
 
 
 class GanYuan:
@@ -75,7 +96,7 @@ class GanYuan:
     def addskill(self) -> None:
         PathSkill = "./Source/Skill/BKG2.png"  # 获取技能背景
         img = Image.open(PathSkill)
-        PathOri = "./Source/Charactor/头像_" + self.data['Name'] + Skindict[self.data['Skin']]  # 获取原始头像
+        PathOri = "./Source/Character/头像_" + self.data['Name'] + Skindict[self.data['Skin']]  # 获取原始头像
         New = Image.open(PathOri).convert("RGBA")  # 打开原始头像
         a = New.split()[3]
         img.paste(New, (0, 0), mask=a)  # 粘贴
@@ -122,7 +143,6 @@ class GanYuan:
         draw.text((4, 206 - 26), text, font=font)
         img.save(self.EditingImg)  # 储存
 
-
     def addmod(self) -> None:
         if not self.data['Mod'] == '':
             img = Image.open(self.EditingImg)
@@ -155,6 +175,5 @@ for i in range(len(BoxData)):
     EditingImg = Image.open(nowganyuan.EditingImg).convert("RGBA")  # 打开小头像
     a = EditingImg.split()[3]
     DrBKG.img.paste(EditingImg, (ShowX, ShowY), mask=a)
-
 DrBKG.addtitle()
-print('over')
+
