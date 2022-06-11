@@ -17,6 +17,7 @@ def only_ascii(raw_str: str) -> bool:
         return False
 
 
+Path_Excel = "./Source/arkE.xlsx"
 Skindict = {"精一": ".png", "精二": "_2.png", "skin1": "_skin1.png", "skin2": "_skin2.png", "skin3": "_skin3.png"}
 NumSkillThr = 0
 UseJson = 0
@@ -151,14 +152,20 @@ class GanYuan:
             x, y = Newmod.size
             a = Newmod.split()[3]
             img.paste(Newmod, (180 - x, 180 - y), mask=a)  # 粘贴
+            PathModLevel = "./Source/Mod/" + str(int(self.data["ModLevel"])) + ".png"
+            Newmod = Image.open(PathModLevel).convert("RGBA")  # 打开图标
+            Newmod = Newmod.resize((30, 30), Image.ANTIALIAS)
+            a = Newmod.split()[3]
+            img.paste(Newmod, (180-30, 180-y-10, 180, 180-y-10+30), mask=a)  # 粘贴
             img.save(self.EditingImg)  # 储
+            # 这里需要添加模组等级相关描述
 
 
 '''
 这里开始是main
 '''
 if not UseJson:
-    exceltojson()
+    exceltojson(Path_Excel)
 
 with open('./Source/BoxData.json', 'r', encoding='utf-8') as f:
     BoxData = json.load(f)
