@@ -16,11 +16,20 @@
 2022.6.11更新：重新上传了exe  
 2022.6.13更新：增加日志，重新设计了考虑模组等级的小头像版式  
 2022.6.13更新：自动创建OutPut文件夹
+2022.6.14更新:  1. New layout of operators' card;
+2. New mod naming with a new format of the .xlsx document;
+3. Added mod level system;
+4. Added New fonts;
+5. Uploaded the resources updated in the latest CN server version patch (Notice: The mod icon of Mystic and Guardian has not yet been obtained, temporarily replace them with the icons of other professions)
+
+
+
+
 
   
 下一步计划：  
 做一点算一点吧第一次写程序边学边做  
-1.模组资源改成模组名称，通过模组名称获取
+1.模组资源改成模组名称，通过模组名称获取( finished
 
 
   
