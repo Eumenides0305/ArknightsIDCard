@@ -3,15 +3,17 @@ from PIL import Image, ImageFont, ImageDraw  # pillow版本为9.0.0
 from ExcelToJson import exceltojson
 import ctypes
 import re
+import Loginit
+import os
 
 
-def finishinfo(path: str):
-    ctypes.windll.user32.MessageBoxW(0, f"制作完成，图片路径为:{path}", "ArknightsIDCard", 0 | 64)
+def win_info(message: str):
+    ctypes.windll.user32.MessageBoxW(0, message, "ArknightsIDCard", 0 | 64)
 
 
 def only_ascii(raw_str: str) -> bool:
-    subed_str = re.sub("[A-Za-z0-9]", "", raw_str)   # 删除数字和英文
-    if subed_str == '':   # 没有内容
+    subed_str = re.sub("[A-Za-z0-9]", "", raw_str)  # 删除数字和英文
+    if subed_str == '':  # 没有内容
         return True
     else:
         return False
@@ -37,8 +39,8 @@ class BKG:
         x, y = BKGImg.size
         for List in range(10, self.num):
             Line = self.num // List + 1
-            OutHight = 206*Line + self.data['Gap']*(Line-1) + self.data['TopSide'] + 180 + self.data["FirstLine"]
-            OutWide = 180*List + self.data['Gap']*(List-1) + self.data['LeftSide'] + self.data['RightSide']
+            OutHight = 206 * Line + self.data['Gap'] * (Line - 1) + self.data['TopSide'] + 180 + self.data["FirstLine"]
+            OutWide = 180 * List + self.data['Gap'] * (List - 1) + self.data['LeftSide'] + self.data['RightSide']
             if y / x - OutHight / OutWide > BKGcheck:  # 自动适配背景图大小
                 OutHight = int(OutWide * y / x)
                 BKGImg = BKGImg.resize((OutWide, OutHight), Image.ANTIALIAS)
@@ -47,10 +49,10 @@ class BKG:
     def addtitle(self) -> None:
         OnlyEn = self.only_ascii_name()
         EnBig = 15
-        if OnlyEn:                                                                                      # 设置博士名称字体
-            FontName = ImageFont.truetype("./Source/TTF/AcuminProBook.ttf", self.data['SizeName'])      # 英文和数字
+        if OnlyEn:  # 设置博士名称字体
+            FontName = ImageFont.truetype("./Source/TTF/AcuminProBook.ttf", self.data['SizeName'])  # 英文和数字
         else:
-            FontName = ImageFont.truetype("./Source/TTF/NotoSansHans-Regular.otf", self.data['SizeName']-5)  # 其他
+            FontName = ImageFont.truetype("./Source/TTF/NotoSansHans-Regular.otf", self.data['SizeName'] - 5)  # 其他
         FontDayAndID = ImageFont.truetype("./Source/TTF/AcuminProBook.ttf", self.data['SizeID'])  # 设置日期和博士id字体
         FontTotal = ImageFont.truetype("./Source/TTF/BenderRegular.otf", self.data['SizeTotal'])  # 总专三数
         PathHead = "./Source/Character/头像_" + self.data['Assistant'] + Skindict[self.data['Skin']]  # 助手头像文件
@@ -68,7 +70,7 @@ class BKG:
         self.img.paste(New, (self.data['LeftSide'] - 3, self.data['TopSide'] - 3), mask=a)  # 粘贴头像框
         draw = ImageDraw.Draw(self.img)  # 准备添加文字
         text = "Dr. " + self.data['Name']
-        draw.text((self.data['LeftSide'] + 220, self.data['TopSide'] - 30 + OnlyEn*EnBig), text, font=FontName)  # 写名字
+        draw.text((self.data['LeftSide'] + 220, self.data['TopSide'] - 30 + OnlyEn * EnBig), text, font=FontName)  # 写名字
         text = self.data['DateIn'] + "——" + self.data['DateNow'] + "     ID:" + str(self.data['ID'])
         draw.text((self.data['LeftSide'] + 228, self.data['TopSide'] + 137), text, font=FontDayAndID)  # 日期
         global NumSkillThr
@@ -76,7 +78,8 @@ class BKG:
         draw.text((self.img.size[0] - self.data['TotalToRight'], self.data['TopSide'] + 10), text,
                   font=FontTotal)  # 专三数
         self.img.save(self.PathOutDrBKG)  # 储存
-        finishinfo(self.PathOutDrBKG)
+        message = '制作完成，输出路径为：' + f'{self.PathOutDrBKG}'
+        win_info(message)
 
     def only_ascii_name(self) -> bool:
         cut_word = "#"
@@ -144,43 +147,56 @@ class GanYuan:
         draw.text((4, 206 - 26), text, font=font)
         img.save(self.EditingImg)  # 储存
 
-    def addmod(self) -> None:
+    def addmod(self) -> None:  # 包含模组和模组等级
         if not self.data['Mod'] == '':
             img = Image.open(self.EditingImg)
-            PathMod = "./Source/Mod/" + self.data['Name'] + ".png"
-            Newmod = Image.open(PathMod).convert("RGBA")  # 打开图标
+            PathMod = "./Source/Mod/" + self.data['Name'] + ".png"   # 这里后续应该要改成模组名称
+            Newmod = Image.open(PathMod).convert("RGBA")  # 这里是在载入模组
             x, y = Newmod.size
             a = Newmod.split()[3]
             img.paste(Newmod, (180 - x, 180 - y), mask=a)  # 粘贴
             PathModLevel = "./Source/Mod/" + str(int(self.data["ModLevel"])) + ".png"
-            Newmod = Image.open(PathModLevel).convert("RGBA")  # 打开图标
-            Newmod = Newmod.resize((30, 30), Image.ANTIALIAS)
+            Newmod = Image.open(PathModLevel).convert("RGBA")  # 这里是在载入模组等级
+            Newmod = Newmod.resize((30, 30), Image.ANTIALIAS)   # 重置模组等级图片大小为30*30
             a = Newmod.split()[3]
-            img.paste(Newmod, (180-30, 180-y-10, 180, 180-y-10+30), mask=a)  # 粘贴
+            img.paste(Newmod, (180 - 30, 180 - y - 10), mask=a)  # 粘贴
             img.save(self.EditingImg)  # 储
-            # 这里需要添加模组等级相关描述
 
 
 '''
 这里开始是main
 '''
-if not UseJson:
-    exceltojson(Path_Excel)
 
-with open('./Source/BoxData.json', 'r', encoding='utf-8') as f:
-    BoxData = json.load(f)
-with open('./Source/DrData.json', 'r', encoding='utf-8') as f:
-    DrData = json.load(f)
-ShowLine = 0
-DrBKG = BKG(DrData, len(BoxData))
-for i in range(len(BoxData)):
-    nowganyuan = GanYuan(BoxData[i])
-    if (i % DrBKG.ShowList) == 0:  # 计算小头像所在行
-        ShowLine = ShowLine + 1
-    ShowX = DrBKG.data['LeftSide'] + (i % DrBKG.ShowList) * (180+DrBKG.data['Gap'])  # 小头像横坐标
-    ShowY = DrBKG.data['TopSide'] + ShowLine * (206+DrBKG.data['Gap']) + DrBKG.data['FirstLine'] - 26  # 小头像纵坐标
-    EditingImg = Image.open(nowganyuan.EditingImg).convert("RGBA")  # 打开小头像
-    a = EditingImg.split()[3]
-    DrBKG.img.paste(EditingImg, (ShowX, ShowY), mask=a)
-DrBKG.addtitle()
 
+def draw():
+    os.makedirs('./OutPut', exist_ok=True)
+    if not UseJson:
+        exceltojson(Path_Excel)
+    with open('./Source/BoxData.json', 'r', encoding='utf-8') as f:
+        BoxData = json.load(f)
+    with open('./Source/DrData.json', 'r', encoding='utf-8') as f:
+        DrData = json.load(f)
+    ShowLine = 0
+    DrBKG = BKG(DrData, len(BoxData))
+    for i in range(len(BoxData)):
+        nowganyuan = GanYuan(BoxData[i])
+        if (i % DrBKG.ShowList) == 0:  # 计算小头像所在行
+            ShowLine = ShowLine + 1
+        ShowX = DrBKG.data['LeftSide'] + (i % DrBKG.ShowList) * (180 + DrBKG.data['Gap'])  # 小头像横坐标
+        ShowY = DrBKG.data['TopSide'] + ShowLine * (206 + DrBKG.data['Gap']) + DrBKG.data['FirstLine'] - 26  # 小头像纵坐标
+        EditingImg = Image.open(nowganyuan.EditingImg).convert("RGBA")  # 打开小头像
+        a = EditingImg.split()[3]
+        DrBKG.img.paste(EditingImg, (ShowX, ShowY), mask=a)
+    DrBKG.addtitle()
+
+
+try:
+    draw()
+except Exception as error:
+    Path_Log = './draw.log'
+    if os.path.exists(Path_Log):
+        os.remove(Path_Log)
+    message = '运行出错，错误日志路径：'+f'{Path_Log}'
+    win_info(message)
+    logger = Loginit._get_logger(Path_Log, 'info')  # 输出错误日志
+    logger.info(error)
