@@ -166,15 +166,17 @@ class GanYuan:
             img = final3 #重命名，插进原代码，假装无事发生过
             PathMod = "./Source/Mod/" + "模组类型_" + self.data['Mod'] + ".png"
             Newmod = Image.open(PathMod).convert("RGBA")  # 打开模组图标
-            Newmod = Newmod.resize((42, 42), Image.ANTIALIAS)  #统一模组尺寸
-            x, y = Newmod.size
+
+            x, y = Newmod.size # 取得分辨率
+            z = max(x, y)  # 找出长边
+            Newmod = Newmod.resize((int(42 * x/z), int(42 * y/z)), Image.ANTIALIAS)  # 统一模组尺寸
             a = Newmod.split()[3]
-            img.paste(Newmod, (round(180 - 30 - x/2), round(206 - 30 - y/2)), mask=a)  # 以模组背景为基准居中粘贴
+            img.paste(Newmod, (int(180 - 30 - 21 * x/z), int(206 - 30 - 21 * y/z)), mask=a)  # 以模组背景为基准居中粘贴
             PathModLevel = "./Source/Mod/" + str(int(self.data["ModLevel"])) + ".png"
             Newmod = Image.open(PathModLevel).convert("RGBA")  # 打开模组等级图标
             Newmod = Newmod.resize((20, 20), Image.ANTIALIAS)  # 统一模组等级图标尺寸
             a = Newmod.split()[3]
-            img.paste(Newmod, (180-20, 206-5-60, 180, 206-60-5+20), mask=a)  # 粘贴
+            img.paste(Newmod, (180 - 20, 206 - 5 - 60), mask=a)  # 粘贴
             img.save(self.EditingImg)  # 储
             # 这里需要添加模组等级相关描述
 
