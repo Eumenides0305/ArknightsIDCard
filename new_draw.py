@@ -199,7 +199,14 @@ for i in range(len(BoxData)):
         ShowLine = ShowLine + 1
     ShowX = DrBKG.data['LeftSide'] + (i % DrBKG.ShowList) * (180+DrBKG.data['Gap'])  # 小头像横坐标
     ShowY = DrBKG.data['TopSide'] + ShowLine * (206+DrBKG.data['Gap']) + DrBKG.data['FirstLine'] - 26  # 小头像纵坐标
+
+
+    im1 = DrBKG.img.crop((ShowX,ShowY,ShowX+180,206+ShowY))#从大背景上裁切小头像背景
     EditingImg = Image.open(nowganyuan.EditingImg).convert("RGBA")  # 打开小头像
+    final3 = Image.new("RGBA", im1.size)  # 新建画布
+    final3 = Image.alpha_composite(final3, im1)  # 粘贴原图
+    final3 = Image.alpha_composite(final3, EditingImg)  # 粘贴模组背景
+    EditingImg = final3 #重命名，插进原代码，假装无事发生过
     a = EditingImg.split()[3]
     DrBKG.img.paste(EditingImg, (ShowX, ShowY), mask=a) #这里需要考虑新方法，现有方法若将自带半透明度的图片合成会导致半透明部分存在黑白格
 DrBKG.addtitle()
