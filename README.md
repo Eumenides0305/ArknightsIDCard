@@ -16,14 +16,16 @@
 2022.6.11更新：重新上传了exe  
 2022.6.13更新：增加日志，重新设计了考虑模组等级的小头像版式  
 2022.6.13更新：自动创建OutPut文件夹  
-2022.6.14更新:  1. New layout of operators' card;  
-2. New mod naming with a new format of the .xlsx document;  
-3. Added mod level system;  
-4. Added New fonts;  
-5. Uploaded the resources updated in the latest CN server version patch (Notice: The mod icon of Mystic and Guardian has not yet been obtained, temporarily replace them with the icons of other professions)  
+2022.6.14更新: 1. New layout of operators' card;  
+2022.6.14更新: 2. New mod naming with a new format of the .xlsx document;  
+2022.6.14更新: 3. Added mod level system;  
+2022.6.14更新: 4. Added New fonts;  
+2022.6.14更新: 5. Uploaded the resources updated in the latest CN server version patch (Notice: The mod icon of Mystic and Guardian has not yet been obtained, temporarily replace them with the icons of other professions)  
 2022.6.15Update: Add mod light sys,standardize code
-
-
+2022.6.15Update: 1. Added rarity distinction for operators
+2022.6.15Update: 2. The parameters in excel are unified in English
+2022.6.15Update: 3. Let operator bottom sidebar be translucent
+2022.6.15Update: 4. Created a new xlsx file named arkD so that the two data sets will not overwrite each other
   
 下一步计划：  
 做一点算一点吧第一次写程序边学边做  
