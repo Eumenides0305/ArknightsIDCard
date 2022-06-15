@@ -21,9 +21,7 @@
 3. Added mod level system;  
 4. Added New fonts;  
 5. Uploaded the resources updated in the latest CN server version patch (Notice: The mod icon of Mystic and Guardian has not yet been obtained, temporarily replace them with the icons of other professions)  
-
-
-
+2022.6.15Update: Add mod light sys,standardize code
 
 
   
