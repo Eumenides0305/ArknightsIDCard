@@ -15,7 +15,7 @@
 2022.6.11更新：添加了模组等级模块（涉及文件source/mod，excel，json和代码）
 2022.6.11更新：重新上传了exe  
 2022.6.13更新：增加日志，重新设计了考虑模组等级的小头像版式  
-2022.6.13更新：自动创建OutPut文件夹
+2022.6.13更新：自动创建OutPut文件夹  
 2022.6.14更新:  1. New layout of operators' card;  
 2. New mod naming with a new format of the .xlsx document;  
 3. Added mod level system;  
