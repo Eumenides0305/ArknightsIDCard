@@ -3,8 +3,8 @@
 
 使用说明：  
 依照source里的excel编辑自己的练度，注意干员名不能有错和表有两页  
-需要在new_draw.py的同级目录新建一个OutPut文件夹用于输出  
-然后运行new_draw.py或者new_draw.exe
+然后运行main.py或者main.exe  
+必要资源包括整个source文件夹
   
 更新说明：  
 2022.5.30更新：添加了背景图大小自适应和每行干员数量自适应  
