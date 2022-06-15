@@ -6,7 +6,7 @@ import re
 import random
 
 NumSkillThr = 0
-skinDict = {"精一": ".png", "精二": "_2.png", "skin1": "_skin1.png", "skin2": "_skin2.png", "skin3": "_skin3.png"}
+skinDict = {"elite1": ".png", "elite2": "_2.png", "skin1": "_skin1.png", "skin2": "_skin2.png", "skin3": "_skin3.png"}
 
 
 def win_info(message: str):
@@ -167,8 +167,8 @@ class GanYuan:
         editing.save(self.imgPath)  # save
 
     def add_mod(self) -> None:   # cover mod and mod level
-        modLightDict = {"蓝色": "blue", "绿色": "green", "灰色": "grey", "红色": "red", "金色": "yellow"}
-        modLightList = ["蓝色", "绿色", "灰色", "红色", "金色"]
+        modLightDict = {"blue": "blue", "green": "green", "grey": "grey", "red": "red", "yellow": "yellow"}
+        modLightList = ["blue", "green", "grey", "red", "yellow"]
         stdModSize = 42
         if not self.data['Mod'] == '':    # if Mod exist
             editing = Image.open(self.imgPath)    # open editing file

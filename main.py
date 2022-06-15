@@ -3,7 +3,7 @@ import Loginit
 from new_draw import draw, win_info
 
 os.makedirs('./OutPut', exist_ok=True)
-pathExcel = "./Source/arkE.xlsx"
+pathExcel = "./Source/arkD.xlsx"
 
 # code below is for pycharm
 draw(UseJson=False, pathExcel=pathExcel)

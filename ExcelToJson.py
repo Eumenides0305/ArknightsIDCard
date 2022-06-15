@@ -3,7 +3,7 @@ import json
 
 
 def exceltojson(excel_path) -> None:
-    skinDict = {"精一": ".png", "精二": "_2.png", "skin1": "_skin1.png", "skin2": "_skin2.png", "skin3": "_skin3.png"}
+    skinDict = {"elite1": ".png", "elite2": "_2.png", "skin1": "_skin1.png", "skin2": "_skin2.png", "skin3": "_skin3.png"}
     DrData = {}
     DrDictList = ['Name', 'ID', 'DateIn', 'DateNow', 'Assistant', 'Skin', 'LeftSide',
                   'RightSide', 'TopSide', 'FirstLine', 'Gap', 'SizeName', 'SizeID', 'SizeTotal', 'TotalToRight']
@@ -50,7 +50,7 @@ def exceltojson(excel_path) -> None:
                 #         continue   # 跳过本次
                 BoxData[j][BoxDict[k]] = int(UseSheet.cell_value(NowLine, k))
         if not (BoxData[j]['Skin'] in skinDict):
-            BoxData[j]['Skin'] = "精二"  # 缺省默认为精二
+            BoxData[j]['Skin'] = "elite2"  # 缺省默认为精二
         j = j + 1
     with open('./Source/BoxData.json', 'w', encoding='utf-8') as f:
         json.dump(BoxData, f, ensure_ascii=False, indent=4)
