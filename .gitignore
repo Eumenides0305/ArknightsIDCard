@@ -1,9 +1,17 @@
+<<<<<<< HEAD
+=======
+/NotUse/
+/venv/
+/OutPut/
+
+>>>>>>> DreamHajime-patch
 
 .idea/
 
 __pycache__/
 
 build/
+<<<<<<< HEAD
 
 NotUse/
 
@@ -18,3 +26,5 @@ new_draw.spec
 GlobalInit.py
 
 NewReadMe.txt
+=======
+>>>>>>> DreamHajime-patch
