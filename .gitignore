@@ -2,3 +2,9 @@
 /venv/
 /OutPut/
 
+
+.idea/
+
+__pycache__/
+
+build/
