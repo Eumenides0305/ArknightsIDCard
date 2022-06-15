@@ -27,7 +27,8 @@
   
 下一步计划：  
 做一点算一点吧第一次写程序边学边做  
-1.模组资源改成模组名称，通过模组名称获取( finished
+1.模组资源改成模组名称，通过模组名称获取( finished  
+2.complete error report sys, send more error details to .log
 
 
   
