@@ -21,11 +21,12 @@
 2022.6.14更新: 3. Added mod level system;  
 2022.6.14更新: 4. Added New fonts;  
 2022.6.14更新: 5. Uploaded the resources updated in the latest CN server version patch (Notice: The mod icon of Mystic and Guardian has not yet been obtained, temporarily replace them with the icons of other professions)  
-2022.6.15Update: Add mod light sys,standardize code
-2022.6.15Update: 1. Added rarity distinction for operators
-2022.6.15Update: 2. The parameters in excel are unified in English
-2022.6.15Update: 3. Let operator bottom sidebar be translucent
-2022.6.15Update: 4. Created a new xlsx file named arkD so that the two data sets will not overwrite each other
+2022.6.15Update: Add mod light sys,standardize code  
+2022.6.15Update: 1. Added rarity distinction for operators  
+2022.6.15Update: 2. The parameters in excel are unified in English  
+2022.6.15Update: 3. Let operator bottom sidebar be translucent  
+2022.6.15Update: 4. Created a new xlsx file named arkD so that the two data sets will not overwrite each other  
+2022.6.19Update: 1. Added rarity display, optimized level font style, added sub-function in new_draw for text with shadow  
   
 下一步计划：  
 做一点算一点吧第一次写程序边学边做  

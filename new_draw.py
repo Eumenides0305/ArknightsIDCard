@@ -33,6 +33,16 @@ def translucent_paste(frontImg: Image, backImg: Image, x: int, y: int) -> Image:
     return backImg
 
 
+def shadow_text_draw(text: str, backImg: Image, x: int, y: int, sizeText: int,
+                     fontPath: str, fontColor: str = None) -> Image:
+    drawingImg = ImageDraw.Draw(backImg)
+    font = ImageFont.truetype(fontPath, sizeText)
+    drawingImg.text((x+1, y+1), text, fill='grey', font=font)  # draw for shadow
+    font = ImageFont.truetype(fontPath, sizeText)
+    drawingImg.text((x, y), text, fill=fontColor, font=font)  # draw for text
+    return backImg
+
+
 class BKG:
     def __init__(self, data: dict, num: int):
         self.data = data
@@ -101,6 +111,7 @@ class GanYuan:
         self.data = data
         self.imgPath = ''
         self.add_skill()
+        self.add_star()
         self.add_pot()  # potential
         self.add_level()  # level
         self.add_mod()  # mod and mod level
@@ -112,9 +123,6 @@ class GanYuan:
         headIcon = Image.open(PathOri).convert("RGBA")   # ori head icon
         a = headIcon.split()[3]
         editing.paste(headIcon, (0, 0), mask=a)
-        PathLevel = "./Source/Skill/BKG3.png"
-        levelBkg = Image.open(PathLevel).convert("RGBA")   # level bkg
-        editing = translucent_paste(levelBkg, editing, 0, 0)
         # img2 = Image.open(PathLevel).convert("RGBA")   # level bkg
         # final2 = Image.new("RGBA", editing.size)    # 新建画布
         # final2 = Image.alpha_composite(final2, editing)    # 粘贴原图
@@ -140,6 +148,13 @@ class GanYuan:
         self.imgPath = "./OutPut/头像_" + self.data['Name'] + skinDict[self.data['Skin']]
         editing.save(self.imgPath)  # save
 
+    def add_star(self) -> None:
+        editing = Image.open(self.imgPath)
+        pathLevel = "./Source/Star/BKG"+str(self.data['Star'])+"star.png"
+        levelBkg = Image.open(pathLevel).convert("RGBA")  # level bkg
+        editing = translucent_paste(levelBkg, editing, 0, 0)
+        editing.save(self.imgPath)  # save
+
     def add_pot(self) -> None:  # potential
         editing = Image.open(self.imgPath)
         PathPot = "./Source/Potential/" + str(self.data['Potential']) + ".png"
@@ -157,13 +172,17 @@ class GanYuan:
             editing.paste(eliteIcon, (4, 206 - 22), mask=a)
             editing.save(self.imgPath)  # save
             return
-        levelDraw = ImageDraw.Draw(editing)
-        font = ImageFont.truetype("./Source/TTF/bender.regular.otf", 12)  # font for 'Lv.'
-        text = "Lv."
-        levelDraw.text((4, 206 - 62), text, font=font)        # draw 'Lv.'
-        font = ImageFont.truetype("./Source/TTF/bender.regular.otf", 22)  # font for level number
+        # levelDraw = ImageDraw.Draw(editing)
+        # font = ImageFont.truetype("./Source/TTF/bender.regular.otf", 12)  # font for 'Lv.'
+        # text = "Lv."
+        # levelDraw.text((4, 206 - 62), text, font=font)        # draw 'Lv.'
+        fontPath = "./Source/TTF/bender.regular.otf"
+        editing = shadow_text_draw("Lv.", editing, 4, 144, 12, fontPath=fontPath)
+        # levelDraw = ImageDraw.Draw(editing)
+        # font = ImageFont.truetype("./Source/TTF/bender.regular.otf", 22)  # font for level number
         text = str(self.data['Level'])
-        levelDraw.text((4, 206 - 52), text, font=font)          # draw level number
+        # levelDraw.text((4, 206 - 52), text, font=font)          # draw level number
+        editing = shadow_text_draw(text, editing, 4, 154, 22, fontPath=fontPath)
         editing.save(self.imgPath)  # save
 
     def add_mod(self) -> None:   # cover mod and mod level

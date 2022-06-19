@@ -9,6 +9,7 @@ pathExcel = "./Source/arkD.xlsx"
 draw(UseJson=False, pathExcel=pathExcel)
 
 # code below is for exe
+# pyinstaller -F -w main.py
 # try:
 #     draw(UseJson=False, pathExcel=pathExcel)
 # except Exception as error:
@@ -19,3 +20,4 @@ draw(UseJson=False, pathExcel=pathExcel)
 #     win_info(message)
 #     logger = Loginit._get_logger(Path_Log, 'info')  # 输出错误日志
 #     logger.info(error)
+
