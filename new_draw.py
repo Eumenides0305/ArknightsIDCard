@@ -1,16 +1,12 @@
 import json
 from PIL import Image, ImageFont, ImageDraw  # pillow版本为9.0.0
 from ExcelToJson import exceltojson
-import ctypes
+import win
 import re
 import random
 
 NumSkillThr = 0
 skinDict = {"elite1": ".png", "elite2": "_2.png", "skin1": "_skin1.png", "skin2": "_skin2.png", "skin3": "_skin3.png"}
-
-
-def win_info(message: str):
-    ctypes.windll.user32.MessageBoxW(0, message, "ArknightsIDCard", 0 | 64)
 
 
 def only_ascii(rawStr: str) -> bool:
@@ -23,8 +19,6 @@ def only_ascii(rawStr: str) -> bool:
 
 def translucent_paste(frontImg: Image, backImg: Image, x: int, y: int) -> Image:    # for paste transparent img
     backImgCrop = backImg.crop((x, y, x+frontImg.size[0], y+frontImg.size[1]))  # crop from backImg
-    # print(x + frontImg.size[0])
-    # print(y + frontImg.size[1])
     cropForPaste = Image.new("RGBA", backImgCrop.size)  # new img
     cropForPaste = Image.alpha_composite(cropForPaste, backImgCrop)  # paste backImgCrop
     cropForPaste = Image.alpha_composite(cropForPaste, frontImg)  # paste front
@@ -97,7 +91,7 @@ class BKG:
                        font=fontTotal)  # add num of skill-elite3
         self.img.save(self.PathOutDrBKG)  # save
         message = '制作完成，输出路径为：' + f'{self.PathOutDrBKG}'
-        win_info(message)
+        win.info(message)
 
     def only_ascii_name(self) -> bool:
         cutWord = "#"
@@ -123,11 +117,6 @@ class GanYuan:
         headIcon = Image.open(PathOri).convert("RGBA")   # ori head icon
         a = headIcon.split()[3]
         editing.paste(headIcon, (0, 0), mask=a)
-        # img2 = Image.open(PathLevel).convert("RGBA")   # level bkg
-        # final2 = Image.new("RGBA", editing.size)    # 新建画布
-        # final2 = Image.alpha_composite(final2, editing)    # 粘贴原图
-        # final2 = Image.alpha_composite(final2, img2)    # 粘贴等级背景
-        # editing = final2     # 重命名，插进原代码，假装无事发生过
         Skill = [self.data["Skill1"], self.data["Skill2"], self.data["Skill3"]]
         for num in range(3):      # for skill1,2,3
             if Skill[num] == 0:
@@ -172,16 +161,9 @@ class GanYuan:
             editing.paste(eliteIcon, (4, 206 - 22), mask=a)
             editing.save(self.imgPath)  # save
             return
-        # levelDraw = ImageDraw.Draw(editing)
-        # font = ImageFont.truetype("./Source/TTF/bender.regular.otf", 12)  # font for 'Lv.'
-        # text = "Lv."
-        # levelDraw.text((4, 206 - 62), text, font=font)        # draw 'Lv.'
         fontPath = "./Source/TTF/bender.regular.otf"
         editing = shadow_text_draw("Lv.", editing, 4, 144, 12, fontPath=fontPath)
-        # levelDraw = ImageDraw.Draw(editing)
-        # font = ImageFont.truetype("./Source/TTF/bender.regular.otf", 22)  # font for level number
         text = str(self.data['Level'])
-        # levelDraw.text((4, 206 - 52), text, font=font)          # draw level number
         editing = shadow_text_draw(text, editing, 4, 154, 22, fontPath=fontPath)
         editing.save(self.imgPath)  # save
 
@@ -191,11 +173,9 @@ class GanYuan:
         stdModSize = 42
         if not self.data['Mod'] == '':    # if Mod exist
             editing = Image.open(self.imgPath)    # open editing file
-
             PathModBKG = "./Source/Mod/BKG.png"
             modBkg = Image.open(PathModBKG).convert("RGBA")  # open mod bkg
             editing = translucent_paste(modBkg, editing, 0, 0)       # paste mod frame
-
             try:
                 pathModLight = './Source/Mod/'+modLightDict[self.data['ModLight']]+'_shining.png'
             except:
@@ -208,22 +188,17 @@ class GanYuan:
             modLightImg = modLightImg.resize((newLightImgX, newLightImgY), Image.ANTIALIAS)
             editing = translucent_paste(modLightImg, editing, int(150 - newLightImgX/2), int(176 - newLightImgY/2))
             # paste mod light
-
             PathMod = "./Source/Mod/模组类型_" + self.data['Mod'] + ".png"
             modIcon = Image.open(PathMod).convert("RGBA")  # 打开模组图标
             x, y = modIcon.size     # 取得分辨率
             z = max(x, y)     # 找出长边
             modIcon = modIcon.resize((int(stdModSize * x/z), int(stdModSize * y/z)), Image.ANTIALIAS)  # 统一模组尺寸
-            # a = modIcon.split()[3]
             editing.paste(modIcon, (int(150 - stdModSize*x/z/2), int(176 - stdModSize*y/z/2)), mask=modIcon.split()[3])
             # 以模组背景为基准居中粘贴
-
             pathModLevel = "./Source/Mod/" + str(int(self.data["ModLevel"])) + ".png"
             modLevelIcon = Image.open(pathModLevel).convert("RGBA")  # 打开模组等级图标
             modLevelIcon = modLevelIcon.resize((20, 20), Image.ANTIALIAS)  # standardize size to 20*20
-            # a = modLevelIcon.split()[3]
             editing.paste(modLevelIcon, (180 - 20, 206 - 5 - 60), mask=modLevelIcon.split()[3])  # 粘贴
-
             editing.save(self.imgPath)  # 储
 
 
@@ -249,12 +224,4 @@ def draw(UseJson: bool, pathExcel: str):
         ShowY = DrBKG.data['TopSide'] + ShowLine * (206+DrBKG.data['Gap']) + DrBKG.data['FirstLine'] - 26  # 小头像纵坐标
         EditingImg = Image.open(nowGanYuan.imgPath).convert("RGBA")  # 打开小头像
         DrBKG.img = translucent_paste(EditingImg, DrBKG.img, ShowX, ShowY)   # paste transparent img
-        # im1 = DrBKG.img.crop((ShowX,ShowY,ShowX+180,206+ShowY))             # 从大背景上裁切小头像背景
-        # EditingImg = Image.open(nowGanYuan.imgPath).convert("RGBA")  # 打开小头像
-        # final3 = Image.new("RGBA", im1.size)  # 新建画布
-        # final3 = Image.alpha_composite(final3, im1)  # 粘贴原图
-        # final3 = Image.alpha_composite(final3, EditingImg)  # 粘贴模组背景
-        # EditingImg = final3                       # 重命名，插进原代码，假装无事发生过
-        # a = EditingImg.split()[3]
-        # DrBKG.img.paste(EditingImg, (ShowX, ShowY), mask=a)
     DrBKG.addtitle()
