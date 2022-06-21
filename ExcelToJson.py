@@ -19,7 +19,6 @@ def exceltojson(excel_path) -> None:
     intBoxDict = ["Star", "Potential", "Elite", "Level", "Skill1", "Skill2", "Skill3", "ModLevel"]
     if len(strBoxDict) + len(intBoxDict) != len(BoxDict):
         raise Exception('ExcelToJson.py_Line21: len(strBox) plus len(intBox) isnot equal to len(Box)')
-
     ExcelBlockLine = 3  # 表前空行数
     excel = xlrd.open_workbook(excel_path, encoding_override="utf-8")
     AllSheets = excel.sheets()  # 获取所有页对象列表
@@ -44,10 +43,6 @@ def exceltojson(excel_path) -> None:
                     BoxData[j][BoxDict[k + 2]] = ''  # set ModLight to ''
                     break
             if BoxDict[k] in intBoxDict:    # if type[data] is str
-                # if BoxDict[k] == "ModLevel":   # 如果是模组等级列
-                #     if BoxData[j]["Mod"] == "":  # 如果没有模组
-                #         BoxData[j][BoxDict[k]] = 0
-                #         continue   # 跳过本次
                 BoxData[j][BoxDict[k]] = int(UseSheet.cell_value(NowLine, k))
         if not (BoxData[j]['Skin'] in skinDict):
             BoxData[j]['Skin'] = "elite2"  # 缺省默认为精二
