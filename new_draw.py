@@ -125,7 +125,7 @@ class GanYuan:
                 skillDraw = ImageDraw.Draw(editing)
                 font = ImageFont.truetype("./Source/TTF/BenderBold.otf", 22)
                 text = "Skill: " + str(Skill[1])
-                skillDraw.text((180 - 24 * 3 + 5, 206 - 26), text, font=font)
+                skillDraw.text((5, 206 - 26), text, font=font)
                 break
             pathSkill = "./Source/Skill/" + str(Skill[num]) + ".png"  # num from 0 to 2 means skill 1 to 3
             skillEliteIcon = Image.open(pathSkill).convert("RGBA")  # skill-elite icon
@@ -157,14 +157,16 @@ class GanYuan:
         if self.data['Elite'] != 2:
             PathElite = "./Source/Elite/" + str(self.data['Elite']) + ".png"
             eliteIcon = Image.open(PathElite).convert("RGBA")  # open elite icon
+            eliteIconShadow = Image.new('RGBA', eliteIcon.size, color='grey')
             a = eliteIcon.split()[3]
-            editing.paste(eliteIcon, (4, 206 - 22), mask=a)
+            editing.paste(eliteIconShadow, (6, 156), mask=a)
+            editing.paste(eliteIcon, (5, 155), mask=a)
             editing.save(self.imgPath)  # save
             return
-        fontPath = "./Source/TTF/bender.regular.otf"
-        editing = shadow_text_draw("Lv.", editing, 4, 144, 12, fontPath=fontPath)
+        fontPath = './Source/TTF/' + self.data['levelFont']
+        editing = shadow_text_draw("Lv.", editing, 5, 140, 14, fontPath=fontPath)
         text = str(self.data['Level'])
-        editing = shadow_text_draw(text, editing, 4, 154, 22, fontPath=fontPath)
+        editing = shadow_text_draw(text, editing, 5, 154, 22, fontPath=fontPath)
         editing.save(self.imgPath)  # save
 
     def add_mod(self) -> None:   # cover mod and mod level
@@ -216,7 +218,9 @@ def draw(UseJson: bool, pathExcel: str):
         f.close()
     ShowLine = 0
     DrBKG = BKG(DrData, len(BoxData))
+    levelFont = DrBKG.data['LevelFont']
     for i in range(len(BoxData)):
+        BoxData[i]['levelFont'] = levelFont
         nowGanYuan = GanYuan(BoxData[i])
         if (i % DrBKG.ShowList) == 0:  # 计算小头像所在行
             ShowLine = ShowLine + 1

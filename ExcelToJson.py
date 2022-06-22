@@ -3,11 +3,12 @@ import json
 
 
 def exceltojson(excel_path) -> None:
-    skinDict = {"elite1": ".png", "elite2": "_2.png", "skin1": "_skin1.png", "skin2": "_skin2.png", "skin3": "_skin3.png"}
+    skinDict = {"elite1": ".png", "elite2": "_2.png", "skin1": "_skin1.png", "skin2": "_skin2.png",
+                "skin3": "_skin3.png"}
     DrData = {}
-    DrDictList = ['Name', 'ID', 'DateIn', 'DateNow', 'Assistant', 'Skin', 'LeftSide',
-                  'RightSide', 'TopSide', 'FirstLine', 'Gap', 'SizeName', 'SizeID', 'SizeTotal', 'TotalToRight']
-    strDrDictList = ['Name', 'DateIn', 'DateNow', 'Assistant', 'Skin']
+    DrDictList = ['Name', 'ID', 'DateIn', 'DateNow', 'Assistant', 'Skin', 'LeftSide', 'RightSide', 'TopSide',
+                  'FirstLine', 'Gap', 'SizeName', 'SizeID', 'SizeTotal', 'TotalToRight', 'LevelFont']
+    strDrDictList = ['Name', 'DateIn', 'DateNow', 'Assistant', 'Skin', 'LevelFont']
     intDrDictList = ['ID', 'LeftSide', 'RightSide', 'TopSide', 'FirstLine', 'Gap', 'SizeName', 'SizeID',
                      'SizeTotal', 'TotalToRight']
     if len(strDrDictList) + len(intDrDictList) != len(DrDictList):
@@ -36,14 +37,17 @@ def exceltojson(excel_path) -> None:
     for NowLine in range(ExcelBlockLine, LineMax):
         BoxData.append({})
         for k in range(len(BoxDict)):
-            if BoxDict[k] in strBoxDict:  # if type[data] is str
-                BoxData[j][BoxDict[k]] = str(UseSheet.cell_value(NowLine, k))
-                if BoxDict[k] == 'Mod' and BoxData[j][BoxDict[k]] == '':   # if it has no mod
-                    BoxData[j][BoxDict[k + 1]] = 0     # set ModLevel to 0
-                    BoxData[j][BoxDict[k + 2]] = ''  # set ModLight to ''
-                    break
-            if BoxDict[k] in intBoxDict:    # if type[data] is str
-                BoxData[j][BoxDict[k]] = int(UseSheet.cell_value(NowLine, k))
+            try:
+                if BoxDict[k] in strBoxDict:  # if type[data] is str
+                    BoxData[j][BoxDict[k]] = str(UseSheet.cell_value(NowLine, k))
+                    if BoxDict[k] == 'Mod' and BoxData[j][BoxDict[k]] == '':  # if it has no mod
+                        BoxData[j][BoxDict[k + 1]] = 0  # set ModLevel to 0
+                        BoxData[j][BoxDict[k + 2]] = ''  # set ModLight to ''
+                        break
+                if BoxDict[k] in intBoxDict:  # if type[data] is str
+                    BoxData[j][BoxDict[k]] = int(UseSheet.cell_value(NowLine, k))
+            except:
+                raise Exception(f'请检查Excel文件第 {NowLine+1} 行')
         if not (BoxData[j]['Skin'] in skinDict):
             BoxData[j]['Skin'] = "elite2"  # 缺省默认为精二
         j = j + 1
