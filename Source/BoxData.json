@@ -84,6 +84,20 @@
         "ModLight": "red"
     },
     {
+        "Name": "百炼嘉维尔",
+        "Star": 6,
+        "Potential": 4,
+        "Elite": 2,
+        "Level": 90,
+        "Skill1": 7,
+        "Skill2": 7,
+        "Skill3": 9,
+        "Skin": "elite2",
+        "Mod": "",
+        "ModLevel": 0,
+        "ModLight": ""
+    },
+    {
         "Name": "陈",
         "Star": 6,
         "Potential": 4,
@@ -156,7 +170,7 @@
     {
         "Name": "山",
         "Star": 6,
-        "Potential": 4,
+        "Potential": 5,
         "Elite": 2,
         "Level": 90,
         "Skill1": 10,
@@ -176,7 +190,7 @@
         "Skill1": 10,
         "Skill2": 10,
         "Skill3": 10,
-        "Skin": "skin1",
+        "Skin": "skin2",
         "Mod": "",
         "ModLevel": 0,
         "ModLight": ""
@@ -364,6 +378,20 @@
         "ModLight": "grey"
     },
     {
+        "Name": "鸿雪",
+        "Star": 6,
+        "Potential": 1,
+        "Elite": 2,
+        "Level": 90,
+        "Skill1": 7,
+        "Skill2": 7,
+        "Skill3": 7,
+        "Skin": "elite2",
+        "Mod": "",
+        "ModLevel": 0,
+        "ModLight": ""
+    },
+    {
         "Name": "灰烬",
         "Star": 6,
         "Potential": 2,
@@ -394,7 +422,7 @@
     {
         "Name": "空弦",
         "Star": 6,
-        "Potential": 2,
+        "Potential": 3,
         "Elite": 2,
         "Level": 90,
         "Skill1": 10,
@@ -402,7 +430,7 @@
         "Skill3": 10,
         "Skin": "skin1",
         "Mod": "MAR-Y",
-        "ModLevel": 1,
+        "ModLevel": 3,
         "ModLight": "red"
     },
     {
@@ -464,7 +492,7 @@
     {
         "Name": "艾雅法拉",
         "Star": 6,
-        "Potential": 4,
+        "Potential": 5,
         "Elite": 2,
         "Level": 90,
         "Skill1": 10,
@@ -765,9 +793,9 @@
         "Skill2": 10,
         "Skill3": 10,
         "Skin": "skin1",
-        "Mod": "",
-        "ModLevel": 0,
-        "ModLight": ""
+        "Mod": "HOK-X",
+        "ModLevel": 1,
+        "ModLight": "red"
     },
     {
         "Name": "归溟幽灵鲨",
@@ -814,16 +842,16 @@
     {
         "Name": "水月",
         "Star": 6,
-        "Potential": 1,
+        "Potential": 2,
         "Elite": 2,
         "Level": 90,
         "Skill1": 10,
         "Skill2": 10,
         "Skill3": 10,
         "Skin": "elite2",
-        "Mod": "",
-        "ModLevel": 0,
-        "ModLight": ""
+        "Mod": "AMB-X",
+        "ModLevel": 1,
+        "ModLight": "grey"
     },
     {
         "Name": "温蒂",
@@ -882,6 +910,20 @@
         "ModLight": ""
     },
     {
+        "Name": "晓歌",
+        "Star": 5,
+        "Potential": 6,
+        "Elite": 2,
+        "Level": 80,
+        "Skill1": 7,
+        "Skill2": 7,
+        "Skill3": 0,
+        "Skin": "elite2",
+        "Mod": "",
+        "ModLevel": 0,
+        "ModLight": ""
+    },
+    {
         "Name": "夜半",
         "Star": 5,
         "Potential": 6,
@@ -890,7 +932,7 @@
         "Skill1": 7,
         "Skill2": 10,
         "Skill3": 0,
-        "Skin": "elite2",
+        "Skin": "skin1",
         "Mod": "",
         "ModLevel": 0,
         "ModLight": ""
@@ -905,6 +947,20 @@
         "Skill2": 10,
         "Skill3": 0,
         "Skin": "elite2",
+        "Mod": "",
+        "ModLevel": 0,
+        "ModLight": ""
+    },
+    {
+        "Name": "柏喙",
+        "Star": 5,
+        "Potential": 6,
+        "Elite": 2,
+        "Level": 80,
+        "Skill1": 7,
+        "Skill2": 10,
+        "Skill3": 0,
+        "Skin": "skin1",
         "Mod": "",
         "ModLevel": 0,
         "ModLight": ""
@@ -1013,7 +1069,7 @@
         "Potential": 6,
         "Elite": 2,
         "Level": 80,
-        "Skill1": 7,
+        "Skill1": 10,
         "Skill2": 7,
         "Skill3": 0,
         "Skin": "elite2",
@@ -1104,6 +1160,20 @@
         "Mod": "ART-Y",
         "ModLevel": 1,
         "ModLight": "red"
+    },
+    {
+        "Name": "阿米娅",
+        "Star": 5,
+        "Potential": 6,
+        "Elite": 2,
+        "Level": 80,
+        "Skill1": 7,
+        "Skill2": 10,
+        "Skill3": 7,
+        "Skin": "skin3",
+        "Mod": "",
+        "ModLevel": 0,
+        "ModLight": ""
     },
     {
         "Name": "爱丽丝",
@@ -1223,7 +1293,7 @@
         "Potential": 6,
         "Elite": 2,
         "Level": 80,
-        "Skill1": 9,
+        "Skill1": 10,
         "Skill2": 10,
         "Skill3": 0,
         "Skin": "skin1",
@@ -1304,7 +1374,7 @@
     {
         "Name": "风丸",
         "Star": 5,
-        "Potential": 2,
+        "Potential": 3,
         "Elite": 2,
         "Level": 80,
         "Skill1": 10,
@@ -1420,7 +1490,7 @@
         "Elite": 2,
         "Level": 70,
         "Skill1": 7,
-        "Skill2": 7,
+        "Skill2": 8,
         "Skill3": 0,
         "Skin": "skin2",
         "Mod": "",
@@ -1560,7 +1630,7 @@
         "Elite": 2,
         "Level": 70,
         "Skill1": 7,
-        "Skill2": 7,
+        "Skill2": 10,
         "Skill3": 0,
         "Skin": "skin1",
         "Mod": "RIN-Y",
@@ -1588,7 +1658,7 @@
         "Elite": 2,
         "Level": 70,
         "Skill1": 7,
-        "Skill2": 8,
+        "Skill2": 10,
         "Skill3": 0,
         "Skin": "skin1",
         "Mod": "",
