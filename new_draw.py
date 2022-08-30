@@ -124,7 +124,7 @@ class GanYuan:
             if (Skill[num] < 7) or (self.data['Elite'] != 2):
                 skillDraw = ImageDraw.Draw(editing)
                 font = ImageFont.truetype("./Source/TTF/BenderBold.otf", 22)
-                text = "Skill: " + str(Skill[1])
+                text = "Skill: " + str(Skill[num])
                 skillDraw.text((5, 206 - 26), text, font=font)
                 break
             pathSkill = "./Source/Skill/" + str(Skill[num]) + ".png"  # num from 0 to 2 means skill 1 to 3
