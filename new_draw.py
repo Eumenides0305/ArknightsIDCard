@@ -6,7 +6,7 @@ import re
 import random
 
 NumSkillThr = 0
-skinDict = {"elite1": ".png", "elite2": "_2.png", "skin1": "_skin1.png", "skin2": "_skin2.png", "skin3": "_skin3.png"}
+skinDict = {"elite0": ".png", "elite1": "_1+.png", "elite2": "_2.png", "skin1": "_skin1.png", "skin2": "_skin2.png", "skin3": "_skin3.png"}
 
 
 def only_ascii(rawStr: str) -> bool:
