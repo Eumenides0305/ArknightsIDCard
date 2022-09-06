@@ -220,7 +220,7 @@
         "Skill3": 10,
         "Skin": "elite2",
         "Mod": "DRE-X",
-        "ModLevel": 2,
+        "ModLevel": 3,
         "ModLight": "red"
     },
     {
@@ -915,7 +915,7 @@
         "Potential": 6,
         "Elite": 2,
         "Level": 80,
-        "Skill1": 7,
+        "Skill1": 10,
         "Skill2": 10,
         "Skill3": 0,
         "Skin": "elite2",
