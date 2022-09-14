@@ -154,6 +154,20 @@
         "ModLight": ""
     },
     {
+        "Name": "玛恩纳",
+        "Star": 6,
+        "Potential": 2,
+        "Elite": 2,
+        "Level": 90,
+        "Skill1": 10,
+        "Skill2": 10,
+        "Skill3": 10,
+        "Skin": "elite2",
+        "Mod": "",
+        "ModLevel": 0,
+        "ModLight": ""
+    },
+    {
         "Name": "帕拉斯",
         "Star": 6,
         "Potential": 2,
@@ -176,7 +190,7 @@
         "Skill1": 10,
         "Skill2": 10,
         "Skill3": 10,
-        "Skin": "skin1",
+        "Skin": "skin2",
         "Mod": "",
         "ModLevel": 0,
         "ModLight": ""
@@ -275,9 +289,9 @@
         "Skill2": 10,
         "Skill3": 10,
         "Skin": "skin1",
-        "Mod": "",
-        "ModLevel": 0,
-        "ModLight": ""
+        "Mod": "PRO-X",
+        "ModLevel": 1,
+        "ModLight": "yellow"
     },
     {
         "Name": "塞雷娅",
@@ -331,9 +345,9 @@
         "Skill2": 10,
         "Skill3": 10,
         "Skin": "skin1",
-        "Mod": "",
-        "ModLevel": 0,
-        "ModLight": ""
+        "Mod": "PRO-Y",
+        "ModLevel": 1,
+        "ModLight": "grey"
     },
     {
         "Name": "W",
@@ -380,7 +394,7 @@
     {
         "Name": "鸿雪",
         "Star": 6,
-        "Potential": 1,
+        "Potential": 2,
         "Elite": 2,
         "Level": 90,
         "Skill1": 10,
@@ -924,6 +938,20 @@
         "ModLight": ""
     },
     {
+        "Name": "野鬃",
+        "Star": 5,
+        "Potential": 6,
+        "Elite": 2,
+        "Level": 80,
+        "Skill1": 10,
+        "Skill2": 7,
+        "Skill3": 0,
+        "Skin": "elite2",
+        "Mod": "",
+        "ModLevel": 0,
+        "ModLight": ""
+    },
+    {
         "Name": "夜半",
         "Star": 5,
         "Potential": 6,
@@ -1030,7 +1058,7 @@
         "Skill1": 8,
         "Skill2": 10,
         "Skill3": 0,
-        "Skin": "elite2",
+        "Skin": "skin1",
         "Mod": "",
         "ModLevel": 0,
         "ModLight": ""
@@ -1374,7 +1402,7 @@
     {
         "Name": "风丸",
         "Star": 5,
-        "Potential": 3,
+        "Potential": 4,
         "Elite": 2,
         "Level": 80,
         "Skill1": 10,
@@ -1590,7 +1618,7 @@
         "Skill1": 10,
         "Skill2": 10,
         "Skill3": 0,
-        "Skin": "skin1",
+        "Skin": "skin2",
         "Mod": "",
         "ModLevel": 0,
         "ModLight": ""
@@ -1746,7 +1774,7 @@
         "Skill3": 0,
         "Skin": "skin1",
         "Mod": "EXE-X",
-        "ModLevel": 1,
+        "ModLevel": 3,
         "ModLight": "grey"
     },
     {
