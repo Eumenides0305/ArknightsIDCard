@@ -722,7 +722,7 @@
         "Skill1": 10,
         "Skill2": 10,
         "Skill3": 10,
-        "Skin": "skin1",
+        "Skin": "skin2",
         "Mod": "DEC-X",
         "ModLevel": 1,
         "ModLight": "grey"
@@ -1591,6 +1591,20 @@
         "Skill2": 10,
         "Skill3": 0,
         "Skin": "skin1",
+        "Mod": "",
+        "ModLevel": 0,
+        "ModLight": ""
+    },
+    {
+        "Name": "罗小黑",
+        "Star": 4,
+        "Potential": 1,
+        "Elite": 2,
+        "Level": 70,
+        "Skill1": 7,
+        "Skill2": 7,
+        "Skill3": 0,
+        "Skin": "elite2",
         "Mod": "",
         "ModLevel": 0,
         "ModLight": ""
