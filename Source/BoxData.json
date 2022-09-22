@@ -156,7 +156,7 @@
     {
         "Name": "玛恩纳",
         "Star": 6,
-        "Potential": 2,
+        "Potential": 4,
         "Elite": 2,
         "Level": 90,
         "Skill1": 10,
@@ -506,7 +506,7 @@
     {
         "Name": "艾雅法拉",
         "Star": 6,
-        "Potential": 5,
+        "Potential": 6,
         "Elite": 2,
         "Level": 90,
         "Skill1": 10,
@@ -702,7 +702,7 @@
     {
         "Name": "灵知",
         "Star": 6,
-        "Potential": 1,
+        "Potential": 2,
         "Elite": 2,
         "Level": 90,
         "Skill1": 10,
@@ -722,7 +722,7 @@
         "Skill1": 10,
         "Skill2": 10,
         "Skill3": 10,
-        "Skin": "skin2",
+        "Skin": "skin1",
         "Mod": "DEC-X",
         "ModLevel": 1,
         "ModLight": "grey"
@@ -946,7 +946,7 @@
         "Skill1": 10,
         "Skill2": 7,
         "Skill3": 0,
-        "Skin": "elite2",
+        "Skin": "skin1",
         "Mod": "",
         "ModLevel": 0,
         "ModLight": ""
@@ -1129,6 +1129,20 @@
         "Skill2": 10,
         "Skill3": 0,
         "Skin": "skin1",
+        "Mod": "",
+        "ModLevel": 0,
+        "ModLight": ""
+    },
+    {
+        "Name": "寒芒克洛丝",
+        "Star": 5,
+        "Potential": 6,
+        "Elite": 2,
+        "Level": 80,
+        "Skill1": 7,
+        "Skill2": 10,
+        "Skill3": 0,
+        "Skin": "elite2",
         "Mod": "",
         "ModLevel": 0,
         "ModLight": ""
@@ -1601,7 +1615,7 @@
         "Potential": 1,
         "Elite": 2,
         "Level": 70,
-        "Skill1": 7,
+        "Skill1": 10,
         "Skill2": 7,
         "Skill3": 0,
         "Skin": "elite2",
@@ -1633,6 +1647,20 @@
         "Skill2": 10,
         "Skill3": 0,
         "Skin": "skin2",
+        "Mod": "",
+        "ModLevel": 0,
+        "ModLight": ""
+    },
+    {
+        "Name": "泡泡",
+        "Star": 4,
+        "Potential": 6,
+        "Elite": 2,
+        "Level": 70,
+        "Skill1": 7,
+        "Skill2": 10,
+        "Skill3": 0,
+        "Skin": "elite2",
         "Mod": "",
         "ModLevel": 0,
         "ModLight": ""
@@ -1759,6 +1787,20 @@
         "Skill2": 7,
         "Skill3": 0,
         "Skin": "skin1",
+        "Mod": "",
+        "ModLevel": 0,
+        "ModLight": ""
+    },
+    {
+        "Name": "暗索",
+        "Star": 4,
+        "Potential": 6,
+        "Elite": 2,
+        "Level": 70,
+        "Skill1": 7,
+        "Skill2": 10,
+        "Skill3": 0,
+        "Skin": "skin2",
         "Mod": "",
         "ModLevel": 0,
         "ModLight": ""
