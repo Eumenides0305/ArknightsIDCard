@@ -254,7 +254,7 @@
     {
         "Name": "号角",
         "Star": 6,
-        "Potential": 1,
+        "Potential": 2,
         "Elite": 2,
         "Level": 90,
         "Skill1": 10,
@@ -436,7 +436,7 @@
     {
         "Name": "空弦",
         "Star": 6,
-        "Potential": 3,
+        "Potential": 4,
         "Elite": 2,
         "Level": 90,
         "Skill1": 10,
@@ -492,7 +492,7 @@
     {
         "Name": "早露",
         "Star": 6,
-        "Potential": 2,
+        "Potential": 3,
         "Elite": 2,
         "Level": 90,
         "Skill1": 10,
@@ -639,9 +639,9 @@
         "Skill2": 10,
         "Skill3": 10,
         "Skin": "elite2",
-        "Mod": "",
-        "ModLevel": 0,
-        "ModLight": ""
+        "Mod": "PHY-X",
+        "ModLevel": 1,
+        "ModLight": "blue"
     },
     {
         "Name": "流明",
@@ -667,9 +667,9 @@
         "Skill2": 10,
         "Skill3": 10,
         "Skin": "skin1",
-        "Mod": "",
-        "ModLevel": 0,
-        "ModLight": ""
+        "Mod": "PHY-Y",
+        "ModLevel": 1,
+        "ModLight": "blue"
     },
     {
         "Name": "夜莺",
@@ -698,6 +698,20 @@
         "Mod": "DEC-Y",
         "ModLevel": 1,
         "ModLight": "grey"
+    },
+    {
+        "Name": "白铁",
+        "Star": 6,
+        "Potential": 2,
+        "Elite": 2,
+        "Level": 90,
+        "Skill1": 10,
+        "Skill2": 10,
+        "Skill3": 10,
+        "Skin": "elite2",
+        "Mod": "",
+        "ModLevel": 0,
+        "ModLight": ""
     },
     {
         "Name": "灵知",
@@ -848,7 +862,7 @@
         "Skill1": 10,
         "Skill2": 10,
         "Skill3": 10,
-        "Skin": "elite2",
+        "Skin": "skin1",
         "Mod": "MER-X",
         "ModLevel": 1,
         "ModLight": "grey"
@@ -1008,6 +1022,20 @@
         "ModLight": "red"
     },
     {
+        "Name": "海沫",
+        "Star": 5,
+        "Potential": 6,
+        "Elite": 2,
+        "Level": 80,
+        "Skill1": 10,
+        "Skill2": 7,
+        "Skill3": 0,
+        "Skin": "elite2",
+        "Mod": "",
+        "ModLevel": 0,
+        "ModLight": ""
+    },
+    {
         "Name": "拉普兰德",
         "Star": 5,
         "Potential": 6,
@@ -1055,7 +1083,7 @@
         "Potential": 6,
         "Elite": 2,
         "Level": 80,
-        "Skill1": 8,
+        "Skill1": 10,
         "Skill2": 10,
         "Skill3": 0,
         "Skin": "skin1",
@@ -1111,7 +1139,7 @@
         "Potential": 6,
         "Elite": 2,
         "Level": 80,
-        "Skill1": 7,
+        "Skill1": 10,
         "Skill2": 10,
         "Skill3": 0,
         "Skin": "skin1",
@@ -1143,14 +1171,14 @@
         "Skill2": 10,
         "Skill3": 0,
         "Skin": "elite2",
-        "Mod": "",
-        "ModLevel": 0,
-        "ModLight": ""
+        "Mod": "MAR-X",
+        "ModLevel": 1,
+        "ModLight": "red"
     },
     {
         "Name": "熔泉",
         "Star": 5,
-        "Potential": 5,
+        "Potential": 6,
         "Elite": 2,
         "Level": 80,
         "Skill1": 7,
@@ -1226,7 +1254,7 @@
         "Skill1": 7,
         "Skill2": 10,
         "Skill3": 0,
-        "Skin": "elite2",
+        "Skin": "skin1",
         "Mod": "",
         "ModLevel": 0,
         "ModLight": ""
@@ -1330,6 +1358,20 @@
         "ModLight": ""
     },
     {
+        "Name": "九色鹿",
+        "Star": 5,
+        "Potential": 1,
+        "Elite": 2,
+        "Level": 80,
+        "Skill1": 7,
+        "Skill2": 10,
+        "Skill3": 0,
+        "Skin": "elite2",
+        "Mod": "",
+        "ModLevel": 0,
+        "ModLight": ""
+    },
+    {
         "Name": "空",
         "Star": 5,
         "Potential": 6,
@@ -1422,7 +1464,7 @@
         "Skill1": 10,
         "Skill2": 10,
         "Skill3": 0,
-        "Skin": "elite2",
+        "Skin": "skin1",
         "Mod": "PUM-X",
         "ModLevel": 1,
         "ModLight": "red"
@@ -1454,6 +1496,20 @@
         "Mod": "EXE-X",
         "ModLevel": 1,
         "ModLight": "grey"
+    },
+    {
+        "Name": "见行者",
+        "Star": 5,
+        "Potential": 6,
+        "Elite": 2,
+        "Level": 80,
+        "Skill1": 8,
+        "Skill2": 10,
+        "Skill3": 0,
+        "Skin": "elite2",
+        "Mod": "",
+        "ModLevel": 0,
+        "ModLight": ""
     },
     {
         "Name": "卡夫卡",
@@ -1493,6 +1549,20 @@
         "Skill2": 7,
         "Skill3": 0,
         "Skin": "skin1",
+        "Mod": "",
+        "ModLevel": 0,
+        "ModLight": ""
+    },
+    {
+        "Name": "食铁兽",
+        "Star": 5,
+        "Potential": 6,
+        "Elite": 2,
+        "Level": 80,
+        "Skill1": 7,
+        "Skill2": 10,
+        "Skill3": 0,
+        "Skin": "skin2",
         "Mod": "",
         "ModLevel": 0,
         "ModLight": ""
@@ -1727,7 +1797,7 @@
         "Potential": 6,
         "Elite": 2,
         "Level": 70,
-        "Skill1": 7,
+        "Skill1": 10,
         "Skill2": 10,
         "Skill3": 0,
         "Skin": "skin1",
