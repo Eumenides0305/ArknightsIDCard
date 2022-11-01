@@ -9,9 +9,9 @@
         "Skill2": 10,
         "Skill3": 10,
         "Skin": "elite2",
-        "Mod": "",
-        "ModLevel": 0,
-        "ModLight": ""
+        "Mod": "SOL-Y",
+        "ModLevel": 1,
+        "ModLight": "green"
     },
     {
         "Name": "风笛",
@@ -30,13 +30,27 @@
     {
         "Name": "琴柳",
         "Star": 6,
-        "Potential": 4,
+        "Potential": 5,
         "Elite": 2,
         "Level": 90,
         "Skill1": 10,
         "Skill2": 10,
         "Skill3": 10,
         "Skin": "skin1",
+        "Mod": "",
+        "ModLevel": 0,
+        "ModLight": ""
+    },
+    {
+        "Name": "伺夜",
+        "Star": 6,
+        "Potential": 6,
+        "Elite": 2,
+        "Level": 90,
+        "Skill1": 7,
+        "Skill2": 7,
+        "Skill3": 7,
+        "Skin": "elite2",
         "Mod": "",
         "ModLevel": 0,
         "ModLight": ""
@@ -51,9 +65,9 @@
         "Skill2": 10,
         "Skill3": 10,
         "Skin": "skin2",
-        "Mod": "",
-        "ModLevel": 0,
-        "ModLight": ""
+        "Mod": "SOL-X",
+        "ModLevel": 1,
+        "ModLight": "yellow"
     },
     {
         "Name": "焰尾",
@@ -65,9 +79,9 @@
         "Skill2": 10,
         "Skill3": 10,
         "Skin": "skin1",
-        "Mod": "",
-        "ModLevel": 0,
-        "ModLight": ""
+        "Mod": "SOL-Y",
+        "ModLevel": 1,
+        "ModLight": "green"
     },
     {
         "Name": "艾丽妮",
@@ -232,7 +246,7 @@
         "Skill1": 10,
         "Skill2": 10,
         "Skill3": 10,
-        "Skin": "elite2",
+        "Skin": "skin1",
         "Mod": "DRE-X",
         "ModLevel": 3,
         "ModLight": "red"
@@ -247,6 +261,20 @@
         "Skill2": 10,
         "Skill3": 10,
         "Skin": "skin2",
+        "Mod": "",
+        "ModLevel": 0,
+        "ModLight": ""
+    },
+    {
+        "Name": "斥罪",
+        "Star": 6,
+        "Potential": 1,
+        "Elite": 2,
+        "Level": 90,
+        "Skill1": 7,
+        "Skill2": 7,
+        "Skill3": 7,
+        "Skin": "elite2",
         "Mod": "",
         "ModLevel": 0,
         "ModLight": ""
@@ -456,7 +484,7 @@
         "Skill1": 10,
         "Skill2": 10,
         "Skill3": 10,
-        "Skin": "elite2",
+        "Skin": "skin1",
         "Mod": "",
         "ModLevel": 0,
         "ModLight": ""
@@ -520,7 +548,7 @@
     {
         "Name": "澄闪",
         "Star": 6,
-        "Potential": 5,
+        "Potential": 6,
         "Elite": 2,
         "Level": 90,
         "Skill1": 10,
@@ -624,7 +652,7 @@
         "Skill1": 10,
         "Skill2": 10,
         "Skill3": 10,
-        "Skin": "elite2",
+        "Skin": "skin1",
         "Mod": "CHA-X",
         "ModLevel": 1,
         "ModLight": "red"
@@ -837,6 +865,20 @@
         "Skin": "elite2",
         "Mod": "PUM-X",
         "ModLevel": 3,
+        "ModLight": "red"
+    },
+    {
+        "Name": "缄默德克萨斯",
+        "Star": 6,
+        "Potential": 3,
+        "Elite": 2,
+        "Level": 90,
+        "Skill1": 7,
+        "Skill2": 7,
+        "Skill3": 10,
+        "Skin": "elite2",
+        "Mod": "EXE-Y",
+        "ModLevel": 1,
         "ModLight": "red"
     },
     {
@@ -1310,7 +1352,7 @@
         "Skill1": 10,
         "Skill2": 7,
         "Skill3": 0,
-        "Skin": "elite2",
+        "Skin": "skin1",
         "Mod": "",
         "ModLevel": 0,
         "ModLight": ""
@@ -1380,7 +1422,7 @@
         "Skill1": 10,
         "Skill2": 10,
         "Skill3": 0,
-        "Skin": "skin1",
+        "Skin": "skin2",
         "Mod": "",
         "ModLevel": 0,
         "ModLight": ""
@@ -1895,7 +1937,7 @@
         "Potential": 6,
         "Elite": 2,
         "Level": 70,
-        "Skill1": 7,
+        "Skill1": 10,
         "Skill2": 10,
         "Skill3": 0,
         "Skin": "skin1",
