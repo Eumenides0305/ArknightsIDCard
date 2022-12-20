@@ -135,9 +135,9 @@
         "Skill2": 10,
         "Skill3": 10,
         "Skin": "skin1",
-        "Mod": "",
-        "ModLevel": 0,
-        "ModLight": ""
+        "Mod": "MUS-X",
+        "ModLevel": 1,
+        "ModLight": "yellow"
     },
     {
         "Name": "煌",
@@ -408,7 +408,7 @@
     {
         "Name": "菲亚梅塔",
         "Star": 6,
-        "Potential": 1,
+        "Potential": 2,
         "Elite": 2,
         "Level": 90,
         "Skill1": 10,
@@ -541,9 +541,9 @@
         "Skill2": 10,
         "Skill3": 10,
         "Skin": "skin1",
-        "Mod": "",
-        "ModLevel": 0,
-        "ModLight": ""
+        "Mod": "SIE-X",
+        "ModLevel": 3,
+        "ModLight": "red"
     },
     {
         "Name": "艾雅法拉",
@@ -568,7 +568,7 @@
         "Skill1": 10,
         "Skill2": 10,
         "Skill3": 10,
-        "Skin": "elite2",
+        "Skin": "skin1",
         "Mod": "",
         "ModLevel": 0,
         "ModLight": ""
@@ -660,7 +660,7 @@
     {
         "Name": "异客",
         "Star": 6,
-        "Potential": 2,
+        "Potential": 3,
         "Elite": 2,
         "Level": 90,
         "Skill1": 10,
@@ -712,6 +712,20 @@
         "Mod": "PHY-Y",
         "ModLevel": 1,
         "ModLight": "blue"
+    },
+    {
+        "Name": "焰影苇草",
+        "Star": 6,
+        "Potential": 1,
+        "Elite": 2,
+        "Level": 90,
+        "Skill1": 10,
+        "Skill2": 10,
+        "Skill3": 10,
+        "Skin": "elite2",
+        "Mod": "",
+        "ModLevel": 0,
+        "ModLight": ""
     },
     {
         "Name": "夜莺",
@@ -1240,7 +1254,7 @@
         "Skill1": 10,
         "Skill2": 7,
         "Skill3": 0,
-        "Skin": "elite2",
+        "Skin": "skin1",
         "Mod": "",
         "ModLevel": 0,
         "ModLight": ""
@@ -1862,6 +1876,20 @@
         "ModLight": ""
     },
     {
+        "Name": "石英",
+        "Star": 4,
+        "Potential": 6,
+        "Elite": 2,
+        "Level": 70,
+        "Skill1": 7,
+        "Skill2": 10,
+        "Skill3": 0,
+        "Skin": "elite2",
+        "Mod": "",
+        "ModLevel": 0,
+        "ModLight": ""
+    },
+    {
         "Name": "宴",
         "Star": 4,
         "Potential": 6,
@@ -1937,7 +1965,7 @@
         "Potential": 6,
         "Elite": 2,
         "Level": 70,
-        "Skill1": 7,
+        "Skill1": 10,
         "Skill2": 7,
         "Skill3": 0,
         "Skin": "skin1",
