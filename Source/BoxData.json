@@ -128,7 +128,7 @@
     {
         "Name": "赫拉格",
         "Star": 6,
-        "Potential": 2,
+        "Potential": 3,
         "Elite": 2,
         "Level": 90,
         "Skill1": 10,
@@ -275,6 +275,20 @@
         "Skill2": 10,
         "Skill3": 10,
         "Skin": "skin2",
+        "Mod": "",
+        "ModLevel": 0,
+        "ModLight": ""
+    },
+    {
+        "Name": "重岳",
+        "Star": 6,
+        "Potential": 3,
+        "Elite": 2,
+        "Level": 90,
+        "Skill1": 7,
+        "Skill2": 7,
+        "Skill3": 7,
+        "Skin": "elite2",
         "Mod": "",
         "ModLevel": 0,
         "ModLight": ""
@@ -555,9 +569,9 @@
         "Skill2": 10,
         "Skill3": 10,
         "Skin": "skin1",
-        "Mod": "",
-        "ModLevel": 0,
-        "ModLight": ""
+        "Mod": "CCR-X",
+        "ModLevel": 3,
+        "ModLight": "red"
     },
     {
         "Name": "澄闪",
@@ -611,6 +625,20 @@
         "Skill2": 10,
         "Skill3": 10,
         "Skin": "skin2",
+        "Mod": "CCR-X",
+        "ModLevel": 3,
+        "ModLight": "red"
+    },
+    {
+        "Name": "林",
+        "Star": 6,
+        "Potential": 2,
+        "Elite": 2,
+        "Level": 90,
+        "Skill1": 7,
+        "Skill2": 7,
+        "Skill3": 7,
+        "Skin": "elite2",
         "Mod": "",
         "ModLevel": 0,
         "ModLight": ""
@@ -806,7 +834,7 @@
         "Skill1": 10,
         "Skill2": 10,
         "Skill3": 10,
-        "Skin": "elite2",
+        "Skin": "skin1",
         "Mod": "SUM-Y",
         "ModLevel": 3,
         "ModLight": "grey"
@@ -1044,7 +1072,7 @@
         "Skill1": 10,
         "Skill2": 10,
         "Skill3": 0,
-        "Skin": "elite2",
+        "Skin": "skin1",
         "Mod": "",
         "ModLevel": 0,
         "ModLight": ""
@@ -1218,6 +1246,20 @@
         "ModLight": "red"
     },
     {
+        "Name": "火哨",
+        "Star": 5,
+        "Potential": 6,
+        "Elite": 2,
+        "Level": 80,
+        "Skill1": 7,
+        "Skill2": 7,
+        "Skill3": 0,
+        "Skin": "elite2",
+        "Mod": "",
+        "ModLevel": 0,
+        "ModLight": ""
+    },
+    {
         "Name": "极光",
         "Star": 5,
         "Potential": 6,
@@ -1241,6 +1283,34 @@
         "Skill2": 7,
         "Skill3": 0,
         "Skin": "skin2",
+        "Mod": "",
+        "ModLevel": 0,
+        "ModLight": ""
+    },
+    {
+        "Name": "临光",
+        "Star": 5,
+        "Potential": 6,
+        "Elite": 2,
+        "Level": 80,
+        "Skill1": 10,
+        "Skill2": 7,
+        "Skill3": 0,
+        "Skin": "skin1",
+        "Mod": "",
+        "ModLevel": 0,
+        "ModLight": ""
+    },
+    {
+        "Name": "闪击",
+        "Star": 5,
+        "Potential": 1,
+        "Elite": 2,
+        "Level": 80,
+        "Skill1": 10,
+        "Skill2": 7,
+        "Skill3": 0,
+        "Skin": "elite2",
         "Mod": "",
         "ModLevel": 0,
         "ModLight": ""
@@ -1298,7 +1368,7 @@
         "Skill3": 0,
         "Skin": "elite2",
         "Mod": "MAR-X",
-        "ModLevel": 1,
+        "ModLevel": 3,
         "ModLight": "red"
     },
     {
@@ -1492,7 +1562,7 @@
         "Skill1": 7,
         "Skill2": 10,
         "Skill3": 0,
-        "Skin": "skin1",
+        "Skin": "skin2",
         "Mod": "",
         "ModLevel": 0,
         "ModLight": ""
