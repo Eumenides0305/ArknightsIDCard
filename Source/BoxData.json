@@ -30,7 +30,7 @@
     {
         "Name": "琴柳",
         "Star": 6,
-        "Potential": 5,
+        "Potential": 6,
         "Elite": 2,
         "Level": 90,
         "Skill1": 10,
@@ -114,7 +114,7 @@
     {
         "Name": "陈",
         "Star": 6,
-        "Potential": 4,
+        "Potential": 5,
         "Elite": 2,
         "Level": 90,
         "Skill1": 10,
@@ -131,8 +131,8 @@
         "Potential": 2,
         "Elite": 2,
         "Level": 90,
-        "Skill1": 7,
-        "Skill2": 7,
+        "Skill1": 10,
+        "Skill2": 10,
         "Skill3": 10,
         "Skin": "elite2",
         "Mod": "",
@@ -394,7 +394,7 @@
     {
         "Name": "瑕光",
         "Star": 6,
-        "Potential": 5,
+        "Potential": 6,
         "Elite": 2,
         "Level": 90,
         "Skill1": 10,
@@ -548,7 +548,7 @@
     {
         "Name": "远牙",
         "Star": 6,
-        "Potential": 1,
+        "Potential": 2,
         "Elite": 2,
         "Level": 90,
         "Skill1": 10,
@@ -604,7 +604,7 @@
     {
         "Name": "黑键",
         "Star": 6,
-        "Potential": 2,
+        "Potential": 4,
         "Elite": 2,
         "Level": 90,
         "Skill1": 10,
@@ -646,7 +646,7 @@
     {
         "Name": "林",
         "Star": 6,
-        "Potential": 2,
+        "Potential": 3,
         "Elite": 2,
         "Level": 90,
         "Skill1": 10,
@@ -695,9 +695,9 @@
         "Skill2": 10,
         "Skill3": 10,
         "Skin": "skin1",
-        "Mod": "",
-        "ModLevel": 0,
-        "ModLight": ""
+        "Mod": "BLA-X",
+        "ModLevel": 1,
+        "ModLight": "red"
     },
     {
         "Name": "异客",
@@ -814,7 +814,7 @@
     {
         "Name": "灵知",
         "Star": 6,
-        "Potential": 2,
+        "Potential": 3,
         "Elite": 2,
         "Level": 90,
         "Skill1": 10,
@@ -834,7 +834,7 @@
         "Skill1": 10,
         "Skill2": 10,
         "Skill3": 10,
-        "Skin": "skin1",
+        "Skin": "skin3",
         "Mod": "DEC-X",
         "ModLevel": 1,
         "ModLight": "grey"
@@ -968,7 +968,7 @@
     {
         "Name": "傀影",
         "Star": 6,
-        "Potential": 4,
+        "Potential": 5,
         "Elite": 2,
         "Level": 90,
         "Skill1": 10,
@@ -994,6 +994,20 @@
         "ModLight": "grey"
     },
     {
+        "Name": "麒麟X夜刀",
+        "Star": 6,
+        "Potential": 6,
+        "Elite": 2,
+        "Level": 90,
+        "Skill1": 10,
+        "Skill2": 10,
+        "Skill3": 10,
+        "Skin": "elite2",
+        "Mod": "EXE-X",
+        "ModLevel": 3,
+        "ModLight": "grey"
+    },
+    {
         "Name": "水月",
         "Star": 6,
         "Potential": 2,
@@ -1010,16 +1024,16 @@
     {
         "Name": "温蒂",
         "Star": 6,
-        "Potential": 4,
+        "Potential": 5,
         "Elite": 2,
         "Level": 90,
         "Skill1": 10,
         "Skill2": 10,
         "Skill3": 10,
         "Skin": "skin1",
-        "Mod": "",
-        "ModLevel": 0,
-        "ModLight": ""
+        "Mod": "PUS-X",
+        "ModLevel": 1,
+        "ModLight": "grey"
     },
     {
         "Name": "德克萨斯",
@@ -1218,6 +1232,20 @@
         "ModLight": ""
     },
     {
+        "Name": "火龙S黑角",
+        "Star": 5,
+        "Potential": 6,
+        "Elite": 2,
+        "Level": 80,
+        "Skill1": 7,
+        "Skill2": 10,
+        "Skill3": 0,
+        "Skin": "elite2",
+        "Mod": "",
+        "ModLevel": 0,
+        "ModLight": ""
+    },
+    {
         "Name": "拉普兰德",
         "Star": 5,
         "Potential": 6,
@@ -1235,6 +1263,20 @@
         "Name": "燧石",
         "Star": 5,
         "Potential": 6,
+        "Elite": 2,
+        "Level": 80,
+        "Skill1": 7,
+        "Skill2": 10,
+        "Skill3": 0,
+        "Skin": "skin1",
+        "Mod": "",
+        "ModLevel": 0,
+        "ModLight": ""
+    },
+    {
+        "Name": "因陀罗",
+        "Star": 5,
+        "Potential": 5,
         "Elite": 2,
         "Level": 80,
         "Skill1": 7,
@@ -1295,6 +1337,20 @@
         "Level": 80,
         "Skill1": 10,
         "Skill2": 7,
+        "Skill3": 0,
+        "Skin": "elite2",
+        "Mod": "",
+        "ModLevel": 0,
+        "ModLight": ""
+    },
+    {
+        "Name": "火神",
+        "Star": 5,
+        "Potential": 3,
+        "Elite": 2,
+        "Level": 80,
+        "Skill1": 7,
+        "Skill2": 10,
         "Skill3": 0,
         "Skin": "elite2",
         "Mod": "",
@@ -1412,6 +1468,20 @@
         "Mod": "MAR-X",
         "ModLevel": 3,
         "ModLight": "red"
+    },
+    {
+        "Name": "截云",
+        "Star": 5,
+        "Potential": 6,
+        "Elite": 2,
+        "Level": 80,
+        "Skill1": 7,
+        "Skill2": 10,
+        "Skill3": 0,
+        "Skin": "elite2",
+        "Mod": "",
+        "ModLevel": 0,
+        "ModLight": ""
     },
     {
         "Name": "熔泉",
@@ -1702,7 +1772,7 @@
         "Skill1": 7,
         "Skill2": 10,
         "Skill3": 0,
-        "Skin": "elite2",
+        "Skin": "skin1",
         "Mod": "SUM-X",
         "ModLevel": 1,
         "ModLight": "grey"
@@ -1930,6 +2000,20 @@
         "Mod": "DRE-Y",
         "ModLevel": 1,
         "ModLight": "grey"
+    },
+    {
+        "Name": "断罪者",
+        "Star": 4,
+        "Potential": 1,
+        "Elite": 2,
+        "Level": 70,
+        "Skill1": 10,
+        "Skill2": 7,
+        "Skill3": 0,
+        "Skin": "skin1",
+        "Mod": "",
+        "ModLevel": 0,
+        "ModLight": ""
     },
     {
         "Name": "刻刀",
