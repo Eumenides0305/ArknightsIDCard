@@ -84,6 +84,20 @@
         "ModLight": "green"
     },
     {
+        "Name": "伊内丝",
+        "Star": 6,
+        "Potential": 3,
+        "Elite": 2,
+        "Level": 90,
+        "Skill1": 10,
+        "Skill2": 10,
+        "Skill3": 10,
+        "Skin": "elite2",
+        "Mod": "",
+        "ModLevel": 0,
+        "ModLight": ""
+    },
+    {
         "Name": "艾丽妮",
         "Star": 6,
         "Potential": 6,
@@ -142,7 +156,7 @@
     {
         "Name": "赫拉格",
         "Star": 6,
-        "Potential": 3,
+        "Potential": 4,
         "Elite": 2,
         "Level": 90,
         "Skill1": 10,
@@ -562,7 +576,7 @@
     {
         "Name": "早露",
         "Star": 6,
-        "Potential": 3,
+        "Potential": 4,
         "Elite": 2,
         "Level": 90,
         "Skill1": 10,
@@ -618,16 +632,16 @@
     {
         "Name": "卡涅利安",
         "Star": 6,
-        "Potential": 4,
+        "Potential": 5,
         "Elite": 2,
         "Level": 90,
         "Skill1": 10,
         "Skill2": 10,
         "Skill3": 10,
         "Skin": "skin2",
-        "Mod": "",
-        "ModLevel": 0,
-        "ModLight": ""
+        "Mod": "PLX-X",
+        "ModLevel": 1,
+        "ModLight": "yellow"
     },
     {
         "Name": "刻俄柏",
@@ -653,9 +667,9 @@
         "Skill2": 10,
         "Skill3": 10,
         "Skin": "elite2",
-        "Mod": "",
-        "ModLevel": 0,
-        "ModLight": ""
+        "Mod": "PLX-X",
+        "ModLevel": 1,
+        "ModLight": "yellow"
     },
     {
         "Name": "莫斯提马",
@@ -668,13 +682,13 @@
         "Skill3": 10,
         "Skin": "skin1",
         "Mod": "SPC-Y",
-        "ModLevel": 1,
+        "ModLevel": 3,
         "ModLight": "grey"
     },
     {
         "Name": "夕",
         "Star": 6,
-        "Potential": 3,
+        "Potential": 1,
         "Elite": 2,
         "Level": 90,
         "Skill1": 10,
@@ -800,7 +814,7 @@
     {
         "Name": "白铁",
         "Star": 6,
-        "Potential": 2,
+        "Potential": 3,
         "Elite": 2,
         "Level": 90,
         "Skill1": 10,
@@ -884,7 +898,7 @@
     {
         "Name": "阿",
         "Star": 6,
-        "Potential": 3,
+        "Potential": 4,
         "Elite": 2,
         "Level": 90,
         "Skill1": 10,
@@ -905,9 +919,9 @@
         "Skill2": 10,
         "Skill3": 10,
         "Skin": "elite2",
-        "Mod": "",
-        "ModLevel": 0,
-        "ModLight": ""
+        "Mod": "TRP-Y",
+        "ModLevel": 3,
+        "ModLight": "red"
     },
     {
         "Name": "歌蕾蒂娅",
@@ -1461,7 +1475,7 @@
         "Potential": 6,
         "Elite": 2,
         "Level": 80,
-        "Skill1": 7,
+        "Skill1": 10,
         "Skill2": 10,
         "Skill3": 0,
         "Skin": "elite2",
