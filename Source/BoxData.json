@@ -28,6 +28,20 @@
         "ModLight": "green"
     },
     {
+        "Name": "缪尔赛思",
+        "Star": 6,
+        "Potential": 3,
+        "Elite": 2,
+        "Level": 90,
+        "Skill1": 7,
+        "Skill2": 7,
+        "Skill3": 10,
+        "Skin": "elite2",
+        "Mod": "",
+        "ModLevel": 0,
+        "ModLight": ""
+    },
+    {
         "Name": "琴柳",
         "Star": 6,
         "Potential": 6,
@@ -106,7 +120,7 @@
         "Skill1": 10,
         "Skill2": 10,
         "Skill3": 10,
-        "Skin": "elite2",
+        "Skin": "skin1",
         "Mod": "SWO-Y",
         "ModLevel": 1,
         "ModLight": "red"
@@ -274,7 +288,7 @@
         "Skill1": 10,
         "Skill2": 10,
         "Skill3": 10,
-        "Skin": "skin1",
+        "Skin": "skin2",
         "Mod": "DRE-Y",
         "ModLevel": 3,
         "ModLight": "grey"
@@ -344,7 +358,7 @@
         "Skill1": 10,
         "Skill2": 10,
         "Skill3": 10,
-        "Skin": "elite2",
+        "Skin": "skin1",
         "Mod": "",
         "ModLevel": 0,
         "ModLight": ""
@@ -512,7 +526,7 @@
         "Skill1": 10,
         "Skill2": 10,
         "Skill3": 10,
-        "Skin": "elite2",
+        "Skin": "skin1",
         "Mod": "",
         "ModLevel": 0,
         "ModLight": ""
@@ -541,9 +555,9 @@
         "Skill2": 10,
         "Skill3": 10,
         "Skin": "skin1",
-        "Mod": "",
-        "ModLevel": 0,
-        "ModLight": ""
+        "Mod": "BOM-X",
+        "ModLevel": 1,
+        "ModLight": "red"
     },
     {
         "Name": "能天使",
@@ -624,10 +638,24 @@
         "Skill1": 10,
         "Skill2": 10,
         "Skill3": 10,
-        "Skin": "elite2",
+        "Skin": "skin1",
         "Mod": "MSC-X",
         "ModLevel": 1,
         "ModLight": "red"
+    },
+    {
+        "Name": "霍尔海雅",
+        "Star": 6,
+        "Potential": 3,
+        "Elite": 2,
+        "Level": 90,
+        "Skill1": 7,
+        "Skill2": 7,
+        "Skill3": 7,
+        "Skin": "elite2",
+        "Mod": "",
+        "ModLevel": 0,
+        "ModLight": ""
     },
     {
         "Name": "卡涅利安",
@@ -742,6 +770,20 @@
         "ModLight": "blue"
     },
     {
+        "Name": "凯尔希",
+        "Star": 6,
+        "Potential": 6,
+        "Elite": 2,
+        "Level": 90,
+        "Skill1": 10,
+        "Skill2": 10,
+        "Skill3": 10,
+        "Skin": "skin1",
+        "Mod": "PHY-Y",
+        "ModLevel": 1,
+        "ModLight": ""
+    },
+    {
         "Name": "流明",
         "Star": 6,
         "Potential": 6,
@@ -750,7 +792,7 @@
         "Skill1": 10,
         "Skill2": 10,
         "Skill3": 10,
-        "Skin": "elite2",
+        "Skin": "skin1",
         "Mod": "WAH-X",
         "ModLevel": 1,
         "ModLight": "blue"
@@ -826,6 +868,20 @@
         "ModLight": ""
     },
     {
+        "Name": "淬羽赫默",
+        "Star": 6,
+        "Potential": 6,
+        "Elite": 2,
+        "Level": 90,
+        "Skill1": 7,
+        "Skill2": 7,
+        "Skill3": 7,
+        "Skin": "elite2",
+        "Mod": "",
+        "ModLevel": 0,
+        "ModLight": ""
+    },
+    {
         "Name": "灵知",
         "Star": 6,
         "Potential": 3,
@@ -835,9 +891,9 @@
         "Skill2": 10,
         "Skill3": 10,
         "Skin": "skin1",
-        "Mod": "",
-        "ModLevel": 0,
-        "ModLight": ""
+        "Mod": "UMD-X",
+        "ModLevel": 1,
+        "ModLight": "grey"
     },
     {
         "Name": "铃兰",
@@ -912,7 +968,7 @@
     {
         "Name": "多萝西",
         "Star": 6,
-        "Potential": 3,
+        "Potential": 4,
         "Elite": 2,
         "Level": 90,
         "Skill1": 10,
@@ -960,7 +1016,7 @@
         "Skill1": 10,
         "Skill2": 10,
         "Skill3": 10,
-        "Skin": "elite2",
+        "Skin": "skin1",
         "Mod": "PUM-Y",
         "ModLevel": 3,
         "ModLight": "yellow"
@@ -1192,7 +1248,7 @@
     {
         "Name": "暴行",
         "Star": 5,
-        "Potential": 4,
+        "Potential": 5,
         "Elite": 2,
         "Level": 80,
         "Skill1": 7,
@@ -1283,6 +1339,20 @@
         "Skill2": 10,
         "Skill3": 0,
         "Skin": "skin1",
+        "Mod": "",
+        "ModLevel": 0,
+        "ModLight": ""
+    },
+    {
+        "Name": "星极",
+        "Star": 5,
+        "Potential": 6,
+        "Elite": 2,
+        "Level": 80,
+        "Skill1": 7,
+        "Skill2": 10,
+        "Skill3": 0,
+        "Skin": "skin2",
         "Mod": "",
         "ModLevel": 0,
         "ModLight": ""
@@ -1478,7 +1548,7 @@
         "Skill1": 10,
         "Skill2": 10,
         "Skill3": 0,
-        "Skin": "elite2",
+        "Skin": "skin1",
         "Mod": "MAR-X",
         "ModLevel": 3,
         "ModLight": "red"
@@ -1800,7 +1870,7 @@
         "Skill1": 7,
         "Skill2": 10,
         "Skill3": 0,
-        "Skin": "elite2",
+        "Skin": "skin1",
         "Mod": "",
         "ModLevel": 0,
         "ModLight": ""
@@ -1822,7 +1892,7 @@
     {
         "Name": "风丸",
         "Star": 5,
-        "Potential": 4,
+        "Potential": 5,
         "Elite": 2,
         "Level": 80,
         "Skill1": 10,
@@ -1870,7 +1940,7 @@
         "Skill1": 8,
         "Skill2": 10,
         "Skill3": 0,
-        "Skin": "elite2",
+        "Skin": "skin1",
         "Mod": "",
         "ModLevel": 0,
         "ModLight": ""
@@ -2361,6 +2431,90 @@
         "Skill2": 10,
         "Skill3": 0,
         "Skin": "skin1",
+        "Mod": "",
+        "ModLevel": 0,
+        "ModLight": ""
+    },
+    {
+        "Name": "Castle-3",
+        "Star": 1,
+        "Potential": 6,
+        "Elite": 0,
+        "Level": 30,
+        "Skill1": 0,
+        "Skill2": 0,
+        "Skill3": 0,
+        "Skin": "skin1",
+        "Mod": "",
+        "ModLevel": 0,
+        "ModLight": ""
+    },
+    {
+        "Name": "泰拉大陆调查团",
+        "Star": 1,
+        "Potential": 6,
+        "Elite": 0,
+        "Level": 30,
+        "Skill1": 0,
+        "Skill2": 0,
+        "Skill3": 0,
+        "Skin": "skin1",
+        "Mod": "",
+        "ModLevel": 0,
+        "ModLight": ""
+    },
+    {
+        "Name": "正义骑士号",
+        "Star": 1,
+        "Potential": 6,
+        "Elite": 0,
+        "Level": 30,
+        "Skill1": 0,
+        "Skill2": 0,
+        "Skill3": 0,
+        "Skin": "elite1",
+        "Mod": "",
+        "ModLevel": 0,
+        "ModLight": ""
+    },
+    {
+        "Name": "Lancet-2",
+        "Star": 1,
+        "Potential": 6,
+        "Elite": 0,
+        "Level": 30,
+        "Skill1": 0,
+        "Skill2": 0,
+        "Skill3": 0,
+        "Skin": "skin1",
+        "Mod": "",
+        "ModLevel": 0,
+        "ModLight": ""
+    },
+    {
+        "Name": "U-Official",
+        "Star": 1,
+        "Potential": 6,
+        "Elite": 0,
+        "Level": 30,
+        "Skill1": 0,
+        "Skill2": 0,
+        "Skill3": 0,
+        "Skin": "elite1",
+        "Mod": "",
+        "ModLevel": 0,
+        "ModLight": ""
+    },
+    {
+        "Name": "THRM-EX",
+        "Star": 1,
+        "Potential": 6,
+        "Elite": 0,
+        "Level": 30,
+        "Skill1": 0,
+        "Skill2": 0,
+        "Skill3": 0,
+        "Skin": "elite1",
         "Mod": "",
         "ModLevel": 0,
         "ModLight": ""
