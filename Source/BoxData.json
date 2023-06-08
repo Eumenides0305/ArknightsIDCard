@@ -8,7 +8,7 @@
         "Skill1": 10,
         "Skill2": 10,
         "Skill3": 10,
-        "Skin": "elite2",
+        "Skin": "skin1",
         "Mod": "SOL-Y",
         "ModLevel": 1,
         "ModLight": "green"
@@ -30,7 +30,7 @@
     {
         "Name": "缪尔赛思",
         "Star": 6,
-        "Potential": 3,
+        "Potential": 4,
         "Elite": 2,
         "Level": 90,
         "Skill1": 10,
@@ -252,6 +252,20 @@
         "ModLight": ""
     },
     {
+        "Name": "圣约送葬人",
+        "Star": 6,
+        "Potential": 1,
+        "Elite": 2,
+        "Level": 90,
+        "Skill1": 7,
+        "Skill2": 7,
+        "Skill3": 10,
+        "Skin": "elite2",
+        "Mod": "",
+        "ModLevel": 0,
+        "ModLight": ""
+    },
+    {
         "Name": "史尔特尔",
         "Star": 6,
         "Potential": 6,
@@ -388,7 +402,7 @@
         "Skill3": 10,
         "Skin": "skin1",
         "Mod": "PRO-X",
-        "ModLevel": 1,
+        "ModLevel": 2,
         "ModLight": "yellow"
     },
     {
@@ -402,7 +416,7 @@
         "Skill3": 10,
         "Skin": "skin1",
         "Mod": "GUA-X",
-        "ModLevel": 1,
+        "ModLevel": 2,
         "ModLight": "blue"
     },
     {
@@ -582,7 +596,7 @@
         "Skill1": 10,
         "Skill2": 10,
         "Skill3": 10,
-        "Skin": "elite2",
+        "Skin": "skin1",
         "Mod": "DEA-X",
         "ModLevel": 1,
         "ModLight": "red"
@@ -649,9 +663,9 @@
         "Potential": 6,
         "Elite": 2,
         "Level": 90,
-        "Skill1": 7,
-        "Skill2": 7,
-        "Skill3": 7,
+        "Skill1": 10,
+        "Skill2": 10,
+        "Skill3": 10,
         "Skin": "elite2",
         "Mod": "CCR-X",
         "ModLevel": 1,
@@ -744,7 +758,7 @@
     {
         "Name": "异客",
         "Star": 6,
-        "Potential": 3,
+        "Potential": 4,
         "Elite": 2,
         "Level": 90,
         "Skill1": 10,
@@ -781,7 +795,7 @@
         "Skin": "skin1",
         "Mod": "PHY-Y",
         "ModLevel": 1,
-        "ModLight": ""
+        "ModLight": "blue"
     },
     {
         "Name": "流明",
@@ -863,9 +877,9 @@
         "Skill2": 10,
         "Skill3": 10,
         "Skin": "elite2",
-        "Mod": "",
-        "ModLevel": 0,
-        "ModLight": ""
+        "Mod": "CRA-X",
+        "ModLevel": 1,
+        "ModLight": "grey"
     },
     {
         "Name": "淬羽赫默",
@@ -873,9 +887,9 @@
         "Potential": 6,
         "Elite": 2,
         "Level": 90,
-        "Skill1": 7,
-        "Skill2": 7,
-        "Skill3": 7,
+        "Skill1": 10,
+        "Skill2": 10,
+        "Skill3": 10,
         "Skin": "elite2",
         "Mod": "",
         "ModLevel": 0,
@@ -961,9 +975,9 @@
         "Skill2": 10,
         "Skill3": 10,
         "Skin": "skin2",
-        "Mod": "",
-        "ModLevel": 0,
-        "ModLight": ""
+        "Mod": "GEE-X",
+        "ModLevel": 1,
+        "ModLight": "grey"
     },
     {
         "Name": "多萝西",
@@ -1276,7 +1290,7 @@
     {
         "Name": "铎铃",
         "Star": 5,
-        "Potential": 1,
+        "Potential": 2,
         "Elite": 2,
         "Level": 80,
         "Skill1": 7,
@@ -1412,6 +1426,20 @@
         "Mod": "SWO-X",
         "ModLevel": 1,
         "ModLight": "red"
+    },
+    {
+        "Name": "暴雨",
+        "Star": 5,
+        "Potential": 6,
+        "Elite": 2,
+        "Level": 80,
+        "Skill1": 7,
+        "Skill2": 10,
+        "Skill3": 0,
+        "Skin": "skin1",
+        "Mod": "",
+        "ModLevel": 0,
+        "ModLight": ""
     },
     {
         "Name": "火哨",
@@ -1574,7 +1602,7 @@
         "Elite": 2,
         "Level": 80,
         "Skill1": 7,
-        "Skill2": 7,
+        "Skill2": 10,
         "Skill3": 0,
         "Skin": "elite2",
         "Mod": "",
@@ -1588,7 +1616,7 @@
         "Elite": 2,
         "Level": 80,
         "Skill1": 7,
-        "Skill2": 7,
+        "Skill2": 10,
         "Skill3": 0,
         "Skin": "skin1",
         "Mod": "",
@@ -1714,7 +1742,7 @@
         "Elite": 2,
         "Level": 80,
         "Skill1": 7,
-        "Skill2": 7,
+        "Skill2": 10,
         "Skill3": 0,
         "Skin": "skin1",
         "Mod": "",
@@ -1794,7 +1822,7 @@
     {
         "Name": "桑葚",
         "Star": 5,
-        "Potential": 4,
+        "Potential": 6,
         "Elite": 2,
         "Level": 80,
         "Skill1": 7,
@@ -1924,7 +1952,7 @@
         "Elite": 2,
         "Level": 80,
         "Skill1": 7,
-        "Skill2": 7,
+        "Skill2": 10,
         "Skill3": 0,
         "Skin": "skin1",
         "Mod": "",
@@ -1948,7 +1976,7 @@
     {
         "Name": "风丸",
         "Star": 5,
-        "Potential": 5,
+        "Potential": 6,
         "Elite": 2,
         "Level": 80,
         "Skill1": 10,
@@ -2260,7 +2288,7 @@
         "Elite": 2,
         "Level": 70,
         "Skill1": 7,
-        "Skill2": 7,
+        "Skill2": 10,
         "Skill3": 0,
         "Skin": "elite2",
         "Mod": "",
@@ -2456,7 +2484,7 @@
         "Elite": 2,
         "Level": 70,
         "Skill1": 7,
-        "Skill2": 7,
+        "Skill2": 10,
         "Skill3": 0,
         "Skin": "elite2",
         "Mod": "",
@@ -2470,7 +2498,7 @@
         "Elite": 2,
         "Level": 70,
         "Skill1": 7,
-        "Skill2": 7,
+        "Skill2": 10,
         "Skill3": 0,
         "Skin": "skin2",
         "Mod": "",
@@ -2562,6 +2590,20 @@
         "ModLight": ""
     },
     {
+        "Name": "Friston-3",
+        "Star": 1,
+        "Potential": 2,
+        "Elite": 0,
+        "Level": 30,
+        "Skill1": 0,
+        "Skill2": 0,
+        "Skill3": 0,
+        "Skin": "elite1",
+        "Mod": "",
+        "ModLevel": 0,
+        "ModLight": ""
+    },
+    {
         "Name": "泰拉大陆调查团",
         "Star": 1,
         "Potential": 6,
@@ -2584,7 +2626,7 @@
         "Skill1": 0,
         "Skill2": 0,
         "Skill3": 0,
-        "Skin": "elite1",
+        "Skin": "skin1",
         "Mod": "",
         "ModLevel": 0,
         "ModLight": ""
