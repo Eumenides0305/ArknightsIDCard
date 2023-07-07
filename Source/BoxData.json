@@ -50,10 +50,10 @@
         "Skill1": 10,
         "Skill2": 10,
         "Skill3": 10,
-        "Skin": "skin1",
-        "Mod": "",
-        "ModLevel": 0,
-        "ModLight": ""
+        "Skin": "skin2",
+        "Mod": "BEA-X",
+        "ModLevel": 1,
+        "ModLight": "grey"
     },
     {
         "Name": "伺夜",
@@ -198,7 +198,7 @@
     {
         "Name": "棘刺",
         "Star": 6,
-        "Potential": 4,
+        "Potential": 6,
         "Elite": 2,
         "Level": 90,
         "Skill1": 10,
@@ -422,7 +422,7 @@
     {
         "Name": "森蚺",
         "Star": 6,
-        "Potential": 5,
+        "Potential": 6,
         "Elite": 2,
         "Level": 90,
         "Skill1": 10,
@@ -585,6 +585,20 @@
         "Skin": "skin1",
         "Mod": "MAR-X",
         "ModLevel": 1,
+        "ModLight": "red"
+    },
+    {
+        "Name": "提丰",
+        "Star": 6,
+        "Potential": 1,
+        "Elite": 2,
+        "Level": 90,
+        "Skill1": 7,
+        "Skill2": 10,
+        "Skill3": 10,
+        "Skin": "elite2",
+        "Mod": "SIE-X",
+        "ModLevel": 3,
         "ModLight": "red"
     },
     {
@@ -876,7 +890,7 @@
         "Skill1": 10,
         "Skill2": 10,
         "Skill3": 10,
-        "Skin": "elite2",
+        "Skin": "skin1",
         "Mod": "CRA-X",
         "ModLevel": 1,
         "ModLight": "grey"
@@ -1240,7 +1254,7 @@
         "Skill1": 10,
         "Skill2": 10,
         "Skill3": 0,
-        "Skin": "elite2",
+        "Skin": "skin1",
         "Mod": "",
         "ModLevel": 0,
         "ModLight": ""
@@ -1722,6 +1736,20 @@
         "ModLight": ""
     },
     {
+        "Name": "寒檀",
+        "Star": 5,
+        "Potential": 2,
+        "Elite": 2,
+        "Level": 80,
+        "Skill1": 7,
+        "Skill2": 7,
+        "Skill3": 0,
+        "Skin": "elite2",
+        "Mod": "",
+        "ModLevel": 0,
+        "ModLight": ""
+    },
+    {
         "Name": "蜜蜡",
         "Star": 5,
         "Potential": 6,
@@ -1730,7 +1758,7 @@
         "Skill1": 7,
         "Skill2": 10,
         "Skill3": 0,
-        "Skin": "skin1",
+        "Skin": "skin2",
         "Mod": "",
         "ModLevel": 0,
         "ModLight": ""
@@ -2044,6 +2072,20 @@
         "ModLight": "red"
     },
     {
+        "Name": "空构",
+        "Star": 5,
+        "Potential": 1,
+        "Elite": 2,
+        "Level": 80,
+        "Skill1": 7,
+        "Skill2": 10,
+        "Skill3": 0,
+        "Skin": "elite2",
+        "Mod": "",
+        "ModLevel": 0,
+        "ModLight": ""
+    },
+    {
         "Name": "罗宾",
         "Star": 5,
         "Potential": 6,
@@ -2350,6 +2392,20 @@
         "Mod": "ART-Y",
         "ModLevel": 1,
         "ModLight": "red"
+    },
+    {
+        "Name": "杰西卡",
+        "Star": 4,
+        "Potential": 6,
+        "Elite": 2,
+        "Level": 70,
+        "Skill1": 7,
+        "Skill2": 10,
+        "Skill3": 0,
+        "Skin": "skin2",
+        "Mod": "",
+        "ModLevel": 0,
+        "ModLight": ""
     },
     {
         "Name": "流星",
