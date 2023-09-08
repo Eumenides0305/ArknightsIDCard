@@ -100,7 +100,7 @@
     {
         "Name": "伊内丝",
         "Star": 6,
-        "Potential": 3,
+        "Potential": 4,
         "Elite": 2,
         "Level": 90,
         "Skill1": 10,
@@ -134,10 +134,10 @@
         "Skill1": 10,
         "Skill2": 10,
         "Skill3": 10,
-        "Skin": "elite2",
-        "Mod": "",
-        "ModLevel": 0,
-        "ModLight": ""
+        "Skin": "skin1",
+        "Mod": "CEN-X",
+        "ModLevel": 1,
+        "ModLight": "red"
     },
     {
         "Name": "陈",
@@ -162,7 +162,7 @@
         "Skill1": 10,
         "Skill2": 10,
         "Skill3": 10,
-        "Skin": "elite2",
+        "Skin": "skin1",
         "Mod": "",
         "ModLevel": 0,
         "ModLight": ""
@@ -191,9 +191,9 @@
         "Skill2": 10,
         "Skill3": 10,
         "Skin": "skin1",
-        "Mod": "",
-        "ModLevel": 0,
-        "ModLight": ""
+        "Mod": "CEN-X",
+        "ModLevel": 1,
+        "ModLight": "red"
     },
     {
         "Name": "棘刺",
@@ -254,16 +254,16 @@
     {
         "Name": "圣约送葬人",
         "Star": 6,
-        "Potential": 1,
+        "Potential": 2,
         "Elite": 2,
         "Level": 90,
         "Skill1": 10,
         "Skill2": 10,
         "Skill3": 10,
         "Skin": "elite2",
-        "Mod": "",
-        "ModLevel": 0,
-        "ModLight": ""
+        "Mod": "REA-X",
+        "ModLevel": 1,
+        "ModLight": "blue"
     },
     {
         "Name": "史尔特尔",
@@ -353,6 +353,20 @@
         "Name": "斥罪",
         "Star": 6,
         "Potential": 6,
+        "Elite": 2,
+        "Level": 90,
+        "Skill1": 10,
+        "Skill2": 10,
+        "Skill3": 10,
+        "Skin": "elite2",
+        "Mod": "",
+        "ModLevel": 0,
+        "ModLight": ""
+    },
+    {
+        "Name": "涤火杰西卡",
+        "Star": 6,
+        "Potential": 1,
         "Elite": 2,
         "Level": 90,
         "Skill1": 10,
@@ -548,7 +562,7 @@
     {
         "Name": "空弦",
         "Star": 6,
-        "Potential": 4,
+        "Potential": 5,
         "Elite": 2,
         "Level": 90,
         "Skill1": 10,
@@ -590,13 +604,13 @@
     {
         "Name": "提丰",
         "Star": 6,
-        "Potential": 1,
+        "Potential": 2,
         "Elite": 2,
         "Level": 90,
         "Skill1": 10,
         "Skill2": 10,
         "Skill3": 10,
-        "Skin": "elite2",
+        "Skin": "skin1",
         "Mod": "SIE-X",
         "ModLevel": 3,
         "ModLight": "red"
@@ -652,7 +666,7 @@
         "Skill1": 10,
         "Skill2": 10,
         "Skill3": 10,
-        "Skin": "skin1",
+        "Skin": "skin2",
         "Mod": "",
         "ModLevel": 0,
         "ModLight": ""
@@ -772,7 +786,7 @@
     {
         "Name": "异客",
         "Star": 6,
-        "Potential": 4,
+        "Potential": 5,
         "Elite": 2,
         "Level": 90,
         "Skill1": 10,
@@ -782,6 +796,20 @@
         "Mod": "CHA-X",
         "ModLevel": 1,
         "ModLight": "red"
+    },
+    {
+        "Name": "纯烬艾雅法拉",
+        "Star": 6,
+        "Potential": 2,
+        "Elite": 2,
+        "Level": 90,
+        "Skill1": 10,
+        "Skill2": 10,
+        "Skill3": 10,
+        "Skin": "elite2",
+        "Mod": "",
+        "ModLevel": 0,
+        "ModLight": ""
     },
     {
         "Name": "凯尔希",
@@ -842,7 +870,7 @@
     {
         "Name": "焰影苇草",
         "Star": 6,
-        "Potential": 1,
+        "Potential": 2,
         "Elite": 2,
         "Level": 90,
         "Skill1": 10,
@@ -905,9 +933,9 @@
         "Skill2": 10,
         "Skill3": 10,
         "Skin": "elite2",
-        "Mod": "",
-        "ModLevel": 0,
-        "ModLight": ""
+        "Mod": "BLS-X",
+        "ModLevel": 1,
+        "ModLight": "grey"
     },
     {
         "Name": "灵知",
@@ -946,7 +974,7 @@
         "Skill1": 10,
         "Skill2": 10,
         "Skill3": 10,
-        "Skin": "skin1",
+        "Skin": "skin2",
         "Mod": "SUM-Y",
         "ModLevel": 3,
         "ModLight": "grey"
@@ -1092,6 +1120,20 @@
         "ModLight": "grey"
     },
     {
+        "Name": "琳琅诗怀雅",
+        "Star": 6,
+        "Potential": 2,
+        "Elite": 2,
+        "Level": 90,
+        "Skill1": 10,
+        "Skill2": 10,
+        "Skill3": 10,
+        "Skin": "elite2",
+        "Mod": "MER-X",
+        "ModLevel": 1,
+        "ModLight": "grey"
+    },
+    {
         "Name": "麒麟X夜刀",
         "Star": 6,
         "Potential": 6,
@@ -1197,6 +1239,20 @@
         "Level": 80,
         "Skill1": 10,
         "Skill2": 7,
+        "Skill3": 0,
+        "Skin": "elite2",
+        "Mod": "",
+        "ModLevel": 0,
+        "ModLight": ""
+    },
+    {
+        "Name": "青枳",
+        "Star": 5,
+        "Potential": 6,
+        "Elite": 2,
+        "Level": 80,
+        "Skill1": 7,
+        "Skill2": 10,
         "Skill3": 0,
         "Skin": "elite2",
         "Mod": "",
@@ -1409,9 +1465,9 @@
         "Skill2": 10,
         "Skill3": 0,
         "Skin": "skin1",
-        "Mod": "",
-        "ModLevel": 0,
-        "ModLight": ""
+        "Mod": "CEN-X",
+        "ModLevel": 3,
+        "ModLight": "red"
     },
     {
         "Name": "羽毛笔",
@@ -1582,6 +1638,20 @@
         "ModLight": ""
     },
     {
+        "Name": "冰酿",
+        "Star": 5,
+        "Potential": 6,
+        "Elite": 2,
+        "Level": 80,
+        "Skill1": 7,
+        "Skill2": 7,
+        "Skill3": 0,
+        "Skin": "elite2",
+        "Mod": "",
+        "ModLevel": 0,
+        "ModLight": ""
+    },
+    {
         "Name": "寒芒克洛丝",
         "Star": 5,
         "Potential": 6,
@@ -1702,7 +1772,7 @@
         "Skill1": 7,
         "Skill2": 10,
         "Skill3": 0,
-        "Skin": "elite2",
+        "Skin": "skin1",
         "Mod": "",
         "ModLevel": 0,
         "ModLight": ""
@@ -1742,7 +1812,7 @@
         "Elite": 2,
         "Level": 80,
         "Skill1": 7,
-        "Skill2": 7,
+        "Skill2": 10,
         "Skill3": 0,
         "Skin": "elite2",
         "Mod": "",
@@ -2142,6 +2212,20 @@
         "ModLight": ""
     },
     {
+        "Name": "杏仁",
+        "Star": 5,
+        "Potential": 6,
+        "Elite": 2,
+        "Level": 80,
+        "Skill1": 7,
+        "Skill2": 7,
+        "Skill3": 0,
+        "Skin": "elite2",
+        "Mod": "",
+        "ModLevel": 0,
+        "ModLight": ""
+    },
+    {
         "Name": "崖心",
         "Star": 5,
         "Potential": 6,
@@ -2192,10 +2276,10 @@
         "Skill1": 10,
         "Skill2": 10,
         "Skill3": 0,
-        "Skin": "skin1",
-        "Mod": "",
-        "ModLevel": 0,
-        "ModLight": ""
+        "Skin": "skin2",
+        "Mod": "BEA-X",
+        "ModLevel": 3,
+        "ModLight": "grey"
     },
     {
         "Name": "缠丸",
@@ -2374,7 +2458,7 @@
         "Skill1": 7,
         "Skill2": 10,
         "Skill3": 0,
-        "Skin": "elite2",
+        "Skin": "skin1",
         "Mod": "DEA-Y",
         "ModLevel": 1,
         "ModLight": "red"
