@@ -168,6 +168,20 @@
         "ModLight": ""
     },
     {
+        "Name": "赫德雷",
+        "Star": 6,
+        "Potential": 1,
+        "Elite": 2,
+        "Level": 90,
+        "Skill1": 10,
+        "Skill2": 7,
+        "Skill3": 10,
+        "Skin": "elite2",
+        "Mod": "",
+        "ModLevel": 0,
+        "ModLight": ""
+    },
+    {
         "Name": "赫拉格",
         "Star": 6,
         "Potential": 4,
@@ -387,9 +401,9 @@
         "Skill2": 10,
         "Skill3": 10,
         "Skin": "skin1",
-        "Mod": "",
-        "ModLevel": 0,
-        "ModLight": ""
+        "Mod": "FOR-X",
+        "ModLevel": 1,
+        "ModLight": "red"
     },
     {
         "Name": "泥岩",
@@ -498,10 +512,24 @@
         "Skill1": 10,
         "Skill2": 10,
         "Skill3": 10,
-        "Skin": "elite2",
+        "Skin": "skin1",
         "Mod": "ART-Y",
         "ModLevel": 1,
         "ModLight": "red"
+    },
+    {
+        "Name": "黑",
+        "Star": 6,
+        "Potential": 6,
+        "Elite": 2,
+        "Level": 90,
+        "Skill1": 10,
+        "Skill2": 10,
+        "Skill3": 10,
+        "Skin": "skin1",
+        "Mod": "ARC-X",
+        "ModLevel": 1,
+        "ModLight": "blue"
     },
     {
         "Name": "黑",
@@ -1030,7 +1058,7 @@
         "Skill1": 10,
         "Skill2": 10,
         "Skill3": 10,
-        "Skin": "elite2",
+        "Skin": "skin1",
         "Mod": "TRP-Y",
         "ModLevel": 3,
         "ModLight": "red"
@@ -1644,7 +1672,7 @@
         "Elite": 2,
         "Level": 80,
         "Skill1": 7,
-        "Skill2": 7,
+        "Skill2": 10,
         "Skill3": 0,
         "Skin": "elite2",
         "Mod": "",
@@ -1940,7 +1968,7 @@
         "Skill1": 8,
         "Skill2": 10,
         "Skill3": 0,
-        "Skin": "skin1",
+        "Skin": "skin2",
         "Mod": "",
         "ModLevel": 0,
         "ModLight": ""
@@ -1968,7 +1996,7 @@
         "Skill1": 7,
         "Skill2": 10,
         "Skill3": 0,
-        "Skin": "elite2",
+        "Skin": "skin1",
         "Mod": "",
         "ModLevel": 0,
         "ModLight": ""
@@ -2038,7 +2066,7 @@
         "Skill1": 7,
         "Skill2": 10,
         "Skill3": 0,
-        "Skin": "skin1",
+        "Skin": "skin2",
         "Mod": "",
         "ModLevel": 0,
         "ModLight": ""
@@ -2218,7 +2246,7 @@
         "Elite": 2,
         "Level": 80,
         "Skill1": 7,
-        "Skill2": 7,
+        "Skill2": 10,
         "Skill3": 0,
         "Skin": "elite2",
         "Mod": "",
