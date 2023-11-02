@@ -22,7 +22,7 @@
         "Skill1": 10,
         "Skill2": 10,
         "Skill3": 10,
-        "Skin": "skin1",
+        "Skin": "skin2",
         "Mod": "CHG-X",
         "ModLevel": 3,
         "ModLight": "green"
@@ -174,7 +174,7 @@
         "Elite": 2,
         "Level": 90,
         "Skill1": 10,
-        "Skill2": 7,
+        "Skill2": 10,
         "Skill3": 10,
         "Skin": "elite2",
         "Mod": "",
@@ -232,7 +232,7 @@
         "Skill1": 10,
         "Skill2": 10,
         "Skill3": 10,
-        "Skin": "elite2",
+        "Skin": "skin1",
         "Mod": "",
         "ModLevel": 0,
         "ModLight": ""
@@ -322,6 +322,20 @@
         "ModLight": "grey"
     },
     {
+        "Name": "薇薇安娜",
+        "Star": 6,
+        "Potential": 2,
+        "Elite": 2,
+        "Level": 90,
+        "Skill1": 7,
+        "Skill2": 7,
+        "Skill3": 10,
+        "Skin": "elite2",
+        "Mod": "",
+        "ModLevel": 0,
+        "ModLight": ""
+    },
+    {
         "Name": "耀骑士临光",
         "Star": 6,
         "Potential": 6,
@@ -350,6 +364,20 @@
         "ModLight": ""
     },
     {
+        "Name": "止颂",
+        "Star": 6,
+        "Potential": 6,
+        "Elite": 2,
+        "Level": 90,
+        "Skill1": 7,
+        "Skill2": 7,
+        "Skill3": 7,
+        "Skin": "elite2",
+        "Mod": "",
+        "ModLevel": 0,
+        "ModLight": ""
+    },
+    {
         "Name": "重岳",
         "Star": 6,
         "Potential": 6,
@@ -373,9 +401,9 @@
         "Skill2": 10,
         "Skill3": 10,
         "Skin": "elite2",
-        "Mod": "",
-        "ModLevel": 0,
-        "ModLight": ""
+        "Mod": "UNY-X",
+        "ModLevel": 3,
+        "ModLight": "yellow"
     },
     {
         "Name": "涤火杰西卡",
@@ -415,9 +443,9 @@
         "Skill2": 10,
         "Skill3": 10,
         "Skin": "skin2",
-        "Mod": "",
-        "ModLevel": 0,
-        "ModLight": ""
+        "Mod": "UNY-X",
+        "ModLevel": 3,
+        "ModLight": "yellow"
     },
     {
         "Name": "年",
@@ -1022,6 +1050,20 @@
         "ModLight": "grey"
     },
     {
+        "Name": "塑心",
+        "Star": 6,
+        "Potential": 3,
+        "Elite": 2,
+        "Level": 90,
+        "Skill1": 7,
+        "Skill2": 7,
+        "Skill3": 7,
+        "Skin": "elite2",
+        "Mod": "",
+        "ModLevel": 0,
+        "ModLight": ""
+    },
+    {
         "Name": "浊心斯卡蒂",
         "Star": 6,
         "Potential": 6,
@@ -1038,7 +1080,7 @@
     {
         "Name": "阿",
         "Star": 6,
-        "Potential": 4,
+        "Potential": 5,
         "Elite": 2,
         "Level": 90,
         "Skill1": 10,
@@ -1114,7 +1156,7 @@
         "Skill1": 10,
         "Skill2": 10,
         "Skill3": 10,
-        "Skin": "elite2",
+        "Skin": "skin1",
         "Mod": "EXE-Y",
         "ModLevel": 3,
         "ModLight": "red"
@@ -1916,6 +1958,20 @@
         "Mod": "RIN-X",
         "ModLevel": 1,
         "ModLight": "blue"
+    },
+    {
+        "Name": "刺玫",
+        "Star": 5,
+        "Potential": 2,
+        "Elite": 2,
+        "Level": 80,
+        "Skill1": 7,
+        "Skill2": 10,
+        "Skill3": 0,
+        "Skin": "elite2",
+        "Mod": "",
+        "ModLevel": 0,
+        "ModLight": ""
     },
     {
         "Name": "华法琳",
