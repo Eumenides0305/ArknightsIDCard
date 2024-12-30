@@ -2,8 +2,13 @@
     "Name": "DreamHajime #3374",
     "ID": 1618440,
     "DateIn": "2019.05.06",
+<<<<<<< HEAD
     "DateNow": "2024.12.30",
     "Assistant": "浊心斯卡蒂",
+=======
+    "DateNow": "2024.03.17",
+    "Assistant": "斯卡蒂",
+>>>>>>> origin/main
     "Skin": "skin2",
     "LeftSide": 200,
     "RightSide": 200,
