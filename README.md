@@ -43,14 +43,14 @@
 1. 模组资源改成模组名称，通过模组名称获取( finished  
 2. Complete error report sys, send more error details to .log  
 3. Adapt more kinds of BKG image (only .png can be used now.)
-4. 双模组显示
+4. 干员双模组显示
 5. 特限模组的紫色背景
 6. 玩家头像库扩充
-7. 时装保有数
-8. 雇佣干员进度
-9. 模组展示卡
-10. 名片皮肤
-11. 专九标志
+7. 时装保有数统计
+8. 雇佣干员进度展示
+9. 模组收藏数量展示
+10. 名片皮肤功能
+11. 助战界面专九标志
 
 
   
